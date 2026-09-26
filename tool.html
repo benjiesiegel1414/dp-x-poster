@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>X Post Queue | DividendProjection</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%230B1F1A'/><circle cx='10' cy='22' r='2.2' fill='%234FD1A5'/><circle cx='16' cy='22' r='2.2' fill='%234FD1A5'/><circle cx='16' cy='15.5' r='2.6' fill='%234FD1A5'/><circle cx='22' cy='22' r='2.2' fill='%234FD1A5'/><circle cx='22' cy='15.5' r='2.6' fill='%234FD1A5'/><circle cx='22' cy='8.5' r='3' fill='%2396F2CF'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --canvas:#F2F4F3; --surface:#fff; --ink:#0B1F1A; --ink-2:#475953; --ink-3:#85948E; --line:#E1E6E3; --green:#0B7A55; --green-2:#15A374; --mint:#E2F3EA; --red:#B42318; --redbg:#FDECEA; --amber:#8A5A00; --amberbg:#FFF4DB; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--canvas); color: var(--ink); font: 15px/1.5 Geist, system-ui, -apple-system, sans-serif; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--green-2); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 80px; }
+
+header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+.mark { width: 34px; height: 34px; border-radius: 10px; background: var(--ink); display: grid; place-items: center; flex: none; }
+h1 { font-size: 20px; font-weight: 600; margin: 0; letter-spacing: -.01em; }
+.data-status { color: var(--ink-3); font-size: 13px; }
+header .spacer { flex: 1; }
+
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 8px 14px; font-weight: 500; }
+.btn:hover { border-color: #CDD6D1; }
+.btn.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+.btn.primary:hover { background: #163a31; }
+.btn.small { padding: 5px 10px; font-size: 13px; border-radius: 8px; }
+.btn.danger { color: var(--red); }
+.btn:disabled { opacity: .5; cursor: default; }
+
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
+nav.tabs button { background: none; border: 0; padding: 10px 14px; font-weight: 500; color: var(--ink-3); border-bottom: 2px solid transparent; margin-bottom: -1px; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.count { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 6px; border-radius: 10px; background: var(--line); font-size: 12px; text-align: center; }
+
+.toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+.toolbar label { font-size: 13px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+.toolbar select, .toolbar input { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; background: var(--surface); }
+.toolbar .spacer { flex: 1; }
+.cost { font-size: 13px; color: var(--ink-2); }
+
+.notice { padding: 12px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 14px; }
+.notice.warn { background: var(--amberbg); color: var(--amber); }
+.notice.err { background: var(--redbg); color: var(--red); }
+.notice.ok { background: var(--mint); color: var(--green); }
+
+.post { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+.post img { width: 100%; display: block; border-radius: 10px; aspect-ratio: 16 / 9; background: var(--ink); }
+.pics.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.pics.pair img { aspect-ratio: 7 / 8; object-fit: cover; }
+.post .side { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.post .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); }
+.post .meta input[type=time] { border: 1px solid var(--line); border-radius: 8px; padding: 4px 6px; }
+.post .meta select { border: 1px solid var(--line); border-radius: 8px; padding: 4px 6px; background: var(--surface); }
+.tag { padding: 2px 8px; border-radius: 6px; background: var(--mint); color: var(--green); font-weight: 600; font-size: 12px; }
+.tag.hy { background: var(--amberbg); color: var(--amber); }
+.post textarea { width: 100%; min-height: 168px; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; line-height: 1.45; }
+.post .row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.chars { font-size: 12px; color: var(--ink-3); margin-left: auto; }
+.chars.over { color: var(--red); font-weight: 600; }
+.linkopt { font-size: 13px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+.status-line { font-size: 13px; color: var(--ink-2); }
+.status-line a { color: var(--green); }
+.err-text { color: var(--red); font-size: 13px; }
+
+.empty { text-align: center; padding: 60px 20px; color: var(--ink-2); background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; }
+
+dialog { border: 0; border-radius: 16px; padding: 0; width: min(560px, 94vw); box-shadow: 0 20px 60px rgba(11,31,26,.25); }
+dialog::backdrop { background: rgba(11,31,26,.45); }
+dialog form { padding: 22px; display: grid; gap: 12px; }
+dialog h2 { margin: 0 0 4px; font-size: 18px; }
+dialog label { display: grid; gap: 4px; font-size: 13px; color: var(--ink-2); }
+dialog input { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+dialog .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+dialog .hint { font-size: 12px; color: var(--ink-3); }
+dialog .actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+
+.toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 50; }
+
+@media (max-width: 820px) { .post { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 18 18"><circle cx="3.5" cy="14" r="1.6" fill="#4FD1A5"/><circle cx="9" cy="14" r="1.6" fill="#4FD1A5"/><circle cx="9" cy="8.8" r="1.9" fill="#4FD1A5"/><circle cx="14.5" cy="14" r="1.6" fill="#4FD1A5"/><circle cx="14.5" cy="8.8" r="1.9" fill="#4FD1A5"/><circle cx="14.5" cy="3.2" r="2.2" fill="#96F2CF"/></svg></span>
+    <div>
+      <h1>X post queue</h1>
+      <div class="data-status" id="dataStatus">Loading today's yields…</div>
+    </div>
+    <span class="spacer"></span>
+    <button class="btn" id="settingsBtn">Settings</button>
+  </header>
+
+  <div id="setupNotice"></div>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="drafts">Drafts<span class="count" id="nDrafts">0</span></button>
+    <button role="tab" aria-selected="false" data-tab="scheduled">Scheduled<span class="count" id="nSched">·</span></button>
+    <button role="tab" aria-selected="false" data-tab="posted">Posted</button>
+    <button role="tab" aria-selected="false" data-tab="failed">Failed<span class="count" id="nFailed">·</span></button>
+  </nav>
+
+  <section id="tab-drafts">
+    <div class="toolbar">
+      <label>Day
+        <select id="day"><option value="0">Today</option><option value="1" selected>Tomorrow</option><option value="2">In 2 days</option></select>
+      </label>
+      <label>Posts <input id="howMany" type="number" min="1" max="20" value="10" style="width:64px"></label>
+      <button class="btn" id="genBtn" disabled>Generate queue</button>
+      <span class="spacer"></span>
+      <span class="cost" id="costNote"></span>
+      <button class="btn primary" id="schedBtn" disabled>Schedule all</button>
+    </div>
+    <div id="drafts"></div>
+  </section>
+
+  <section id="tab-scheduled" hidden>
+    <div class="toolbar"><button class="btn" id="refreshSched">Refresh</button><span class="spacer"></span><span class="cost">Posts go out within about 15 minutes of their time</span></div>
+    <div id="scheduled"></div>
+  </section>
+
+  <section id="tab-posted" hidden>
+    <div class="toolbar"><button class="btn" id="refreshPosted">Refresh</button></div>
+    <div id="posted"></div>
+  </section>
+
+  <section id="tab-failed" hidden>
+    <div class="toolbar"><button class="btn" id="refreshFailed">Refresh</button></div>
+    <div id="failed"></div>
+  </section>
+</div>
+
+<dialog id="settings">
+  <form method="dialog" id="settingsForm">
+    <h2>Settings</h2>
+    <p class="hint" style="margin:0">Saved only in this browser on this computer.</p>
+    <label>GitHub token
+      <input id="s_token" type="password" autocomplete="off" placeholder="github_pat_…">
+      <span class="hint">Fine-grained token with access to the poster repo only. Permissions: Contents read and write, Actions read and write.</span>
+    </label>
+    <div class="two">
+      <label>GitHub username <input id="s_owner"></label>
+      <label>Repo name <input id="s_repo"></label>
+    </div>
+    <div class="two">
+      <label>First post time <input id="s_start" type="time"></label>
+      <label>Last post time <input id="s_end" type="time"></label>
+    </div>
+    <label>Favorite tickers (show up more often)
+      <input id="s_fav" placeholder="SCHD, JEPI, JEPQ, QQQI, SPYI">
+    </label>
+    <label>Never use these tickers
+      <input id="s_excl" placeholder="SGOV, BIL">
+    </label>
+    <label>Fund pool size
+      <input id="s_pool" type="number" min="10" max="300">
+      <span class="hint">Picks from this many of the largest funds by AUM, plus your favorites.</span>
+    </label>
+    <div class="actions">
+      <button class="btn" value="cancel" formnovalidate>Cancel</button>
+      <button class="btn primary" value="save" id="saveSettings">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+/* =====================================================================
+   CONFIG
+   ===================================================================== */
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxCiod-Cwry7E6k9Un9dgrM_ANymC36_IO_wLyNj-YDo2KI7mp_1ZzyNBnBGZOxT48QPM8TCwtsmA4/pub?gid=0&single=true&output=csv";
+const SITE = "https://dividendprojection.com/";
+const LINK_COST = 0.20, PLAIN_COST = 0.015;
+const CFG_KEY = 'dpx.cfg.v1';
+const DEFAULT_CFG = { token: '', owner: 'benjiesiegel1414', repo: 'dp-x-poster', branch: 'main', start: '08:00', end: '21:00', fav: 'SCHD, JEPI, JEPQ, QQQI, SPYI, DIVO, VYM, DGRO', excl: '', pool: 60 };
+let cfg = { ...DEFAULT_CFG, ...(safeJSON(localStorage.getItem(CFG_KEY)) || {}) };
+function safeJSON(s) { try { return JSON.parse(s); } catch (e) { return null; } }
+function saveCfg() { try { localStorage.setItem(CFG_KEY, JSON.stringify(cfg)); } catch (e) {} }
+
+const $ = id => document.getElementById(id);
+const state = { funds: [], drafts: [], history: new Set(), historyLoaded: false };
+
+/* =====================================================================
+   DATA (same parsing as the site)
+   ===================================================================== */
+function parseCSV(text) {
+  const out = []; let row = [], cell = '', q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += c; }
+    else if (c === '"') q = true;
+    else if (c === ',') { row.push(cell.trim()); cell = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(cell.trim()); out.push(row); row = []; cell = ''; }
+    else cell += c;
+  }
+  if (cell || row.length) { row.push(cell.trim()); out.push(row); }
+  return out;
+}
+const num = s => { const v = parseFloat(String(s ?? '').replace(/[$,%\s]/g, '')); return isNaN(v) ? null : v; };
+function parseAUM(s) {
+  const m = String(s || '').replace(/[$,\s]/g, '').match(/^(-?[\d.]+)([KMBT])?/i);
+  return m ? parseFloat(m[1]) * ({ K: 1e3, M: 1e6, B: 1e9, T: 1e12 }[(m[2] || '').toUpperCase()] || 1) : 0;
+}
+function periodsFor(freq) {
+  const f = (freq || '').toLowerCase();
+  if (f.includes('week')) return 52;
+  if (f.includes('quarter')) return 4;
+  if (f.includes('semi')) return 2;
+  if (f.includes('annual') || f.includes('year')) return 1;
+  return 12;
+}
+function buildFund(c) {
+  return { sym: (c[0] || '').toUpperCase(), name: c[1] || '', provider: c[2] || '', yield: num(c[3]), aum: parseAUM(c[6]), freq: c[10] || '', periods: periodsFor(c[10]) };
+}
+
+/* =====================================================================
+   MATH
+   ===================================================================== */
+function project(o) {
+  // Share price flat, dividends reinvested, no tax, no dividend growth. Same engine as the site.
+  const P = o.periods, yld = o.yield / 100;
+  let invested = o.start;
+  const rows = [{ year: 0, monthlyInc: invested * yld / 12, value: invested }];
+  for (let y = 1; y <= o.years; y++) {
+    const deposit = o.monthly * 12 / P;
+    for (let k = 0; k < P; k++) { invested += deposit; invested += invested * yld / P; }
+    rows.push({ year: y, monthlyInc: invested * yld / 12, value: invested });
+  }
+  return rows;
+}
+
+/* =====================================================================
+   FORMATTING
+   ===================================================================== */
+const usd0 = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+const usd2 = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const money = v => (Math.abs(v) < 100 ? usd2 : usd0).format(v || 0);
+const pct = v => (+v).toFixed(2).replace(/\.?0+$/, '') + '%';
+function short(v) {
+  const a = Math.abs(v), f = n => (v / n).toFixed(1).replace(/\.0$/, '');
+  if (a >= 1e6) return '$' + f(1e6) + 'M';
+  if (a >= 1e5) return '$' + Math.round(v / 1e3) + 'K';
+  if (a >= 1e3) return '$' + f(1e3) + 'K';
+  return '$' + Math.round(v);
+}
+const payWord = p => ({ 52: 'weekly', 12: 'monthly', 4: 'quarterly', 2: 'twice a year', 1: 'once a year' }[p] || 'monthly');
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+const tickers = s => String(s || '').toUpperCase().split(/[\s,]+/).filter(Boolean);
+function roundTo(v, step) { return Math.round(v / step) * step; }
+
+/* =====================================================================
+   POST BUILDERS
+   ===================================================================== */
+const LUMP_AMOUNTS = [5000, 10000, 12500, 15000, 20000, 25000, 30000, 37500, 40000, 50000, 60000, 75000, 100000, 125000, 150000, 200000, 250000, 300000, 500000, 750000, 1000000];
+const GOALS = [500, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 7500, 10000];
+const G_START = [0, 1000, 5000, 10000, 25000, 50000];
+const G_MONTHLY = [100, 200, 250, 500, 750, 1000];
+const G_YEARS = [10, 15, 20, 25, 30];
+const ASKS = ['What would you put in? 👇', 'Would you hold it? 👇', 'How much do you own? 👇', 'Are you holding this one? 👇', ''];
+const HIGH_YIELD = 15, GROWTH_MAX_YIELD = 12;
+
+const PAIR_KINDS = ['versus', 'nowlater'];
+const isPair = k => PAIR_KINDS.includes(k);
+function paramsFor(kind) {
+  if (kind === 'lump' || kind === 'versus') return { amt: pick(LUMP_AMOUNTS) };
+  if (kind === 'nowlater') return { amt: pick(LUMP_AMOUNTS.filter(a => a >= 10000 && a <= 500000)), years: pick(G_YEARS) };
+  if (kind === 'goal') return { goal: pick(GOALS) };
+  return { start: pick(G_START), monthly: pick(G_MONTHLY), years: pick(G_YEARS) };
+}
+function histKey(p) {
+  const k = p.kind === 'lump' || p.kind === 'versus' ? p.params.amt : p.kind === 'goal' ? p.params.goal : p.kind === 'nowlater' ? `${p.params.amt}-${p.params.years}` : `${p.params.start}-${p.params.monthly}-${p.params.years}`;
+  const sym = p.kind === 'versus' ? [p.sym, p.fund2.sym].sort().join('+') : p.sym;
+  return `${sym}_${p.kind}_${k}`;
+}
+function compute(p) {
+  const f = p.fund, y = f.yield;
+  if (p.kind === 'lump') {
+    const annual = p.params.amt * y / 100;
+    p.calc = { annual, monthly: annual / 12, per: annual / f.periods };
+  } else if (p.kind === 'versus') {
+    const pay = fund => { const annual = p.params.amt * fund.yield / 100; return { annual, monthly: annual / 12, per: annual / fund.periods }; };
+    p.calc = { a: pay(f), b: pay(p.fund2) };
+  } else if (p.kind === 'nowlater') {
+    const annual = p.params.amt * y / 100;
+    const rows = project({ start: p.params.amt, monthly: 0, years: p.params.years, periods: f.periods, yield: y });
+    const end = rows[rows.length - 1];
+    p.calc = { annual, monthly: annual / 12, per: annual / f.periods, rows, later: end.monthlyInc, value: end.value };
+  } else if (p.kind === 'goal') {
+    p.calc = { need: roundTo(p.params.goal * 12 / (y / 100), 100) };
+  } else {
+    const rows = project({ start: p.params.start, monthly: p.params.monthly, years: p.params.years, periods: f.periods, yield: y });
+    const end = rows[rows.length - 1];
+    p.calc = { rows, monthly: end.monthlyInc, value: end.value, putIn: p.params.start + p.params.monthly * 12 * p.params.years };
+  }
+}
+function writeText(p) {
+  const f = p.fund, s = '$' + f.sym, y = pct(f.yield), c = p.calc, hy = f.yield >= HIGH_YIELD;
+  const caveat = hy ? '\n\nAssumes the yield holds, which is never guaranteed' : '';
+  const ask = pick(ASKS), end = ask ? '\n\n' + ask : '';
+  let t;
+  if (p.kind === 'versus') {
+    const f2 = p.fund2, s2 = '$' + f2.sym, amt = usd0.format(p.params.amt), a = p.calc.a, b = p.calc.b;
+    const hy2 = Math.max(f.yield, f2.yield) >= HIGH_YIELD;
+    t = pick([
+      () => `${amt} in ${s} vs ${s2} 👇\n\n${s} pays about ${money(a.monthly)}/month\n${s2} pays about ${money(b.monthly)}/month`,
+      () => `Same ${amt}, two different dividend ETFs\n\n${s} at ${y} yield: ${money(a.monthly)}/month\n${s2} at ${pct(f2.yield)} yield: ${money(b.monthly)}/month`,
+    ])() + (hy2 ? '\n\nHigh yields can change, so size positions carefully' : '') + '\n\n' + pick(['Which would you rather own? 👇', 'Which one are you buying? 👇', 'Pick one 👇']);
+    return t;
+  }
+  if (p.kind === 'nowlater') {
+    const amt = usd0.format(p.params.amt), yrs = p.params.years;
+    t = pick([
+      () => `${amt} in ${s} pays about ${money(c.monthly)}/month today\n\nReinvest every dividend for ${yrs} years and it could pay ${money(c.later)}/month`,
+      () => `${s} today vs ${s} in ${yrs} years 👇\n\n${amt} pays about ${money(c.monthly)}/month now\nWith dividends reinvested: about ${money(c.later)}/month in year ${yrs}`,
+    ])() + `\n\nAssumes today's ${y} yield holds and no price change` + end;
+    return t;
+  }
+  if (p.kind === 'lump') {
+    const amt = usd0.format(p.params.amt);
+    const perLine = f.periods === 52 ? `\n\nPaid weekly, about ${money(c.per)} every week` : f.periods === 4 ? `\n\nPaid quarterly, about ${money(c.per)} each payout` : '';
+    t = pick([
+      () => `${amt} in ${s} pays you about ${money(c.monthly)}/month in dividends\n\nThat's ${money(c.annual)} a year at today's ${y} yield${perLine}`,
+      () => `What ${amt} in ${s} pays you 👇\n\n${money(c.monthly)} every month\n${money(c.annual)} every year\n\nBased on its ${y} yield today`,
+      () => `If you put ${amt} into ${s} today\n\nYou'd collect about ${money(c.annual)} in dividends over the next 12 months\n\nThat's ${money(c.monthly)} a month without selling a share`,
+    ])();
+  } else if (p.kind === 'goal') {
+    const g = usd0.format(p.params.goal);
+    t = pick([
+      () => `Want ${g}/month in dividends from ${s}?\n\nYou'd need about ${usd0.format(c.need)} invested at its ${y} yield`,
+      () => `How much ${s} do you need to make ${g} a month?\n\nAbout ${usd0.format(c.need)}\n\nThat's at today's ${y} yield`,
+      () => `${g}/month in dividends\n\nWith ${s} that takes roughly ${usd0.format(c.need)}\n\nBased on its ${y} yield today`,
+    ])();
+  } else {
+    const { start, monthly, years } = p.params;
+    const open = start ? `${usd0.format(start)} today + ${usd0.format(monthly)}/month into ${s} for ${years} years` : `Just ${usd0.format(monthly)}/month into ${s} for ${years} years`;
+    t = pick([
+      () => `${open}\n\nWith dividends reinvested, it could pay about ${money(c.monthly)}/month by year ${years}`,
+      () => `${open}\n\nReinvest every dividend and by year ${years} it could be paying you ${money(c.monthly)} a month`,
+    ])() + `\n\nAssumes today's ${y} yield holds and no price change`;
+    return t + end;
+  }
+  return t + caveat + end;
+}
+function linkFor(p) {
+  const q = new URLSearchParams({ etf: p.fund.sym });
+  if (p.kind === 'lump' || p.kind === 'versus') { q.set('a', p.params.amt); q.set('m', 0); }
+  if (p.kind === 'nowlater') { q.set('a', p.params.amt); q.set('m', 0); q.set('y', p.params.years); }
+  if (p.kind === 'goal') q.set('goal', p.params.goal);
+  if (p.kind === 'growth') { q.set('a', p.params.start); q.set('m', p.params.monthly); q.set('y', p.params.years); }
+  q.set('utm_source', 'x'); q.set('utm_medium', 'social'); q.set('utm_campaign', 'queue');
+  return SITE + '?' + q.toString();
+}
+function finalText(p) { return p.link ? p.text + '\n\n' + linkFor(p) : p.text; }
+
+/* =====================================================================
+   IMAGE (1200x675, same look as the site's share image)
+   ===================================================================== */
+function roundRect(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+function drawImage(p) {
+  const W = 1200, H = 675, S = 2, cv = document.createElement('canvas');
+  cv.width = W * S; cv.height = H * S;
+  const ctx = cv.getContext('2d'); ctx.scale(S, S);
+  const F = (w, s) => `${w} ${s}px Geist, system-ui, -apple-system, sans-serif`;
+  const f = p.fund, c = p.calc;
+  ctx.fillStyle = '#0B1F1A'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 800); g.addColorStop(0, 'rgba(91,227,180,.20)'); g.addColorStop(1, 'rgba(91,227,180,0)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#EAF3EF'; ctx.font = F(600, 24); ctx.textAlign = 'left'; ctx.fillText('DividendProjection', 72, 86);
+  ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 20); ctx.textAlign = 'right'; ctx.fillText('dividendprojection.com', W - 72, 86);
+
+  let line1, line2, big, unit, facts, bars;
+  if (p.kind === 'lump') {
+    line1 = `${usd0.format(p.params.amt)} in ${f.sym}`; line2 = 'could pay me';
+    big = money(c.monthly); unit = '/month';
+    facts = [`${pct(f.yield)} yield, paid ${payWord(f.periods)}`, `${money(c.annual)} a year`];
+    const a = p.params.amt, set = [...new Set([a / 5, a / 2, a, a * 2, a * 5].map(v => roundTo(v, v >= 1000 ? 500 : 100)))];
+    bars = set.map(v => ({ v: v * f.yield / 100 / 12, top: money(v * f.yield / 100 / 12), label: short(v), on: v === a }));
+  } else if (p.kind === 'goal') {
+    line1 = `To earn ${usd0.format(p.params.goal)}/month from ${f.sym}`; line2 = "I'd need";
+    big = usd0.format(c.need); unit = 'invested';
+    facts = [`${pct(f.yield)} yield, paid ${payWord(f.periods)}`, `${usd0.format(p.params.goal * 12)} a year`];
+    const set = [...new Set([500, 1000, 2000, 3000, 5000, p.params.goal])].sort((x, y) => x - y);
+    bars = set.map(v => { const need = v * 12 / (f.yield / 100); return { v: need, top: short(need), label: usd0.format(v) + '/mo', on: v === p.params.goal }; });
+  } else {
+    const { start, monthly, years } = p.params;
+    line1 = start ? `${usd0.format(start)} today + ${usd0.format(monthly)}/mo in ${f.sym} for ${years} years` : `${usd0.format(monthly)}/mo in ${f.sym} for ${years} years`; line2 = 'could pay me';
+    big = money(c.monthly); unit = '/month';
+    facts = [`${pct(f.yield)} yield, dividends reinvested`, `${usd0.format(c.value)} balance in year ${years}`];
+    bars = c.rows.slice(1).map(r => ({ v: r.monthlyInc }));
+  }
+
+  ctx.textAlign = 'left'; ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 30);
+  let s1 = 30; while (ctx.measureText(line1).width > 600 && s1 > 18) { s1 -= 1; ctx.font = F(500, s1); }
+  ctx.fillText(line1, 72, 186);
+  ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 30); ctx.fillText(line2, 72, 228);
+  let size = 150; ctx.font = F(600, size);
+  const maxW = p.kind === 'goal' ? 640 : 700;
+  while (ctx.measureText(big).width > maxW && size > 60) { size -= 4; ctx.font = F(600, size); }
+  ctx.fillStyle = '#FFFFFF'; ctx.fillText(big, 66, 228 + size * 0.95);
+  const tw = ctx.measureText(big).width;
+  ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 30); ctx.fillText(unit, 66 + tw + 14, 228 + size * 0.95);
+
+  ctx.textAlign = 'right'; ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 20);
+  ctx.fillText(facts[0], W - 72, 186); ctx.fillText(facts[1], W - 72, 220);
+
+  // Bars
+  const labeled = !!bars[0].label, bx = 72, by = labeled ? H - 100 : H - 72, bwAll = W - 144, bh = labeled ? 120 : 150;
+  const n = bars.length, slot = bwAll / n, bw = labeled ? Math.min(120, slot * .56) : Math.min(26, slot * .64);
+  const max = Math.max(...bars.map(b => b.v), 1);
+  bars.forEach((b, i) => {
+    const h = Math.max(3, b.v / max * bh), x = bx + i * slot + (slot - bw) / 2;
+    const gg = ctx.createLinearGradient(0, by - h, 0, by);
+    if (!labeled || b.on) { gg.addColorStop(0, '#5BE3B4'); gg.addColorStop(1, '#0E8A60'); }
+    else { gg.addColorStop(0, 'rgba(91,227,180,.35)'); gg.addColorStop(1, 'rgba(14,138,96,.30)'); }
+    ctx.fillStyle = gg; roundRect(ctx, x, by - h, bw, h, Math.min(8, bw / 2.4, h / 2)); ctx.fill();
+    if (labeled) {
+      ctx.textAlign = 'center';
+      ctx.fillStyle = b.on ? '#FFFFFF' : '#93ADA4'; ctx.font = F(b.on ? 600 : 500, 18);
+      ctx.fillText(b.top, x + bw / 2, by - h - 10);
+      ctx.fillStyle = b.on ? '#EAF3EF' : '#93ADA4'; ctx.font = F(b.on ? 600 : 500, 18);
+      ctx.fillText(b.label, x + bw / 2, by + 30);
+    }
+  });
+  return cv.toDataURL('image/png');
+}
+
+/* =====================================================================
+   TALL CARDS FOR 2-IMAGE POSTS (X shows each at about 7:8 side by side)
+   ===================================================================== */
+function drawCard(o) {
+  const W = 700, H = 800, S = 2, cv = document.createElement('canvas');
+  cv.width = W * S; cv.height = H * S;
+  const ctx = cv.getContext('2d'); ctx.scale(S, S);
+  const F = (w, s) => `${w} ${s}px Geist, system-ui, -apple-system, sans-serif`;
+  ctx.fillStyle = '#0B1F1A'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 620); g.addColorStop(0, 'rgba(91,227,180,.20)'); g.addColorStop(1, 'rgba(91,227,180,0)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.textAlign = 'left'; ctx.fillStyle = '#EAF3EF'; ctx.font = F(600, 22); ctx.fillText('DividendProjection', 48, 68);
+  ctx.textAlign = 'right'; ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 16); ctx.fillText('dividendprojection.com', W - 48, 68);
+  // pill
+  ctx.textAlign = 'left'; ctx.font = F(600, 18);
+  const pw = ctx.measureText(o.pill).width + 28;
+  ctx.fillStyle = 'rgba(91,227,180,.14)'; roundRect(ctx, 48, 104, pw, 36, 18); ctx.fill();
+  ctx.fillStyle = '#5BE3B4'; ctx.fillText(o.pill, 62, 128);
+  // sentence
+  ctx.fillStyle = '#93ADA4'; let s1 = 30; ctx.font = F(500, s1);
+  while (ctx.measureText(o.line1).width > W - 96 && s1 > 18) { s1 -= 1; ctx.font = F(500, s1); }
+  ctx.fillText(o.line1, 48, 200);
+  ctx.font = F(500, 30); ctx.fillText(o.line2, 48, 242);
+  // big number + unit
+  let size = 136; ctx.font = F(600, size);
+  while (ctx.measureText(o.big).width > W - 96 && size > 56) { size -= 4; ctx.font = F(600, size); }
+  const baseY = 250 + size * 0.95;
+  ctx.fillStyle = '#FFFFFF'; ctx.fillText(o.big, 42, baseY);
+  ctx.fillStyle = '#93ADA4'; ctx.font = F(500, 28); ctx.fillText(o.unit, 48, baseY + 46);
+  // facts
+  ctx.font = F(500, 20); ctx.fillText(o.facts[0], 48, baseY + 104); ctx.fillText(o.facts[1], 48, baseY + 134);
+  // bars
+  const by = H - 56, top = baseY + 170, bh = Math.max(60, by - top), bars = o.bars, n = bars.length;
+  const slot = (W - 96) / n, bw = Math.max(3, Math.min(34, slot * .64)), max = o.barsMax || Math.max(...bars, 1);
+  bars.forEach((v, i) => {
+    const h = Math.max(3, v / max * bh), x = 48 + i * slot + (slot - bw) / 2;
+    const gg = ctx.createLinearGradient(0, by - h, 0, by); gg.addColorStop(0, '#5BE3B4'); gg.addColorStop(1, '#0E8A60');
+    ctx.fillStyle = gg; roundRect(ctx, x, by - h, bw, h, Math.min(6, bw / 2.4, h / 2)); ctx.fill();
+  });
+  if (o.barsNote) { ctx.textAlign = 'right'; ctx.fillStyle = '#5E7C72'; ctx.font = F(500, 15); ctx.fillText(o.barsNote, W - 48, H - 26); }
+  return cv.toDataURL('image/png');
+}
+function payoutBars(fund, perAmount) { return new Array(fund.periods).fill(perAmount); }
+function drawImages(p) {
+  const c = p.calc;
+  if (p.kind === 'versus') {
+    const shared = Math.max(c.a.per, c.b.per);
+    return [[p.fund, c.a], [p.fund2, c.b]].map(([fund, r]) => drawCard({ barsMax: shared,
+      pill: `$${fund.sym}`, line1: `${usd0.format(p.params.amt)} in ${fund.sym}`, line2: 'could pay me',
+      big: money(r.monthly), unit: 'per month',
+      facts: [`${pct(fund.yield)} yield, paid ${payWord(fund.periods)}`, `${money(r.annual)} a year`],
+      bars: payoutBars(fund, r.per), barsNote: `${fund.periods} payouts a year`,
+    }));
+  }
+  if (p.kind === 'nowlater') {
+    const f = p.fund, yrs = p.params.years;
+    return [
+      drawCard({ pill: 'Today', line1: `${usd0.format(p.params.amt)} in ${f.sym}`, line2: 'pays me', big: money(c.monthly), unit: 'per month',
+        facts: [`${pct(f.yield)} yield, paid ${payWord(f.periods)}`, `${money(c.annual)} a year`], bars: payoutBars(f, c.per), barsNote: 'Payouts this year' }),
+      drawCard({ pill: `In ${yrs} years`, line1: `Reinvest every ${f.sym} dividend`, line2: `and in year ${yrs} it could pay`, big: money(c.later), unit: 'per month',
+        facts: [`${usd0.format(c.value)} balance, nothing added`, `Assumes ${pct(f.yield)} yield holds`], bars: c.rows.slice(1).map(r => r.monthlyInc), barsNote: 'Monthly income by year' }),
+    ];
+  }
+  return [drawImage(p)];
+}
+
+/* =====================================================================
+   GENERATE
+   ===================================================================== */
+function pool() {
+  const excl = new Set(tickers(cfg.excl)), fav = tickers(cfg.fav);
+  const usable = state.funds.filter(f => f.yield > 0.5 && !excl.has(f.sym));
+  const top = [...usable].sort((a, b) => b.aum - a.aum).slice(0, +cfg.pool || 60);
+  const favs = usable.filter(f => fav.includes(f.sym));
+  return { all: [...new Set([...top, ...favs])], favs };
+}
+function pickKind(fund) {
+  const r = Math.random();
+  const k = r < .35 ? 'lump' : r < .55 ? 'goal' : r < .7 ? 'growth' : r < .9 ? 'versus' : 'nowlater';
+  return (k === 'growth' || k === 'nowlater') && fund.yield > GROWTH_MAX_YIELD ? 'lump' : k;
+}
+function makePost(fund, kind, used) {
+  for (let i = 0; i < 25; i++) {
+    const p = { id: crypto.randomUUID().slice(0, 8), fund, sym: fund.sym, kind, params: paramsFor(kind), link: false, edited: false };
+    if (kind === 'versus') { p.fund2 = chooseFund(new Set([fund.sym, ...state.drafts.map(d => d.sym)])); if (!p.fund2) return null; p.params.sym2 = p.fund2.sym; }
+    if (!state.history.has(histKey(p)) && !used.has(histKey(p))) { compute(p); p.text = writeText(p); p.imgs = drawImages(p); return p; }
+  }
+  return null;
+}
+function chooseFund(exclude) {
+  const { all, favs } = pool();
+  const freeFav = favs.filter(f => !exclude.has(f.sym)), free = all.filter(f => !exclude.has(f.sym));
+  const src = freeFav.length && Math.random() < .35 ? freeFav : free;
+  return src.length ? pick(src) : null;
+}
+function slotTimes(n) {
+  const [sh, sm] = cfg.start.split(':').map(Number), [eh, em] = cfg.end.split(':').map(Number);
+  const day = new Date(); day.setDate(day.getDate() + +$('day').value);
+  const startT = new Date(day); startT.setHours(sh, sm, 0, 0);
+  const endT = new Date(day); endT.setHours(eh, em, 0, 0);
+  let from = startT.getTime();
+  const soonest = Date.now() + 20 * 60e3;
+  if (from < soonest) from = Math.ceil(soonest / 300e3) * 300e3;
+  const to = endT.getTime();
+  if (to <= from) return null;
+  const gap = n > 1 ? (to - from) / (n - 1) : 0;
+  return Array.from({ length: n }, (_, i) => {
+    let t = from + gap * i + (i && i < n - 1 ? (Math.random() - .5) * Math.min(gap * .5, 20 * 60e3) : 0);
+    return new Date(Math.round(t / 300e3) * 300e3);
+  });
+}
+async function generate() {
+  const n = Math.max(1, Math.min(20, parseInt($('howMany').value, 10) || 10));
+  const times = slotTimes(n);
+  if (!times) { toast(`Today's posting window (${cfg.start} to ${cfg.end}) is over. Pick tomorrow`); return; }
+  try { await document.fonts.load('600 40px Geist'); await document.fonts.load('500 30px Geist'); } catch (e) {}
+  const usedSyms = new Set(), usedKeys = new Set(), out = [];
+  for (let i = 0; i < n; i++) {
+    const fund = chooseFund(usedSyms); if (!fund) break;
+    const p = makePost(fund, pickKind(fund), usedKeys); if (!p) { i--; usedSyms.add(fund.sym); continue; }
+    p.at = times[i]; usedSyms.add(fund.sym); if (p.fund2) usedSyms.add(p.fund2.sym); usedKeys.add(histKey(p)); out.push(p);
+  }
+  state.drafts = out;
+  renderDrafts();
+}
+
+/* =====================================================================
+   DRAFTS UI
+   ===================================================================== */
+const pad = v => String(v).padStart(2, '0');
+const hhmm = d => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+const fmtWhen = d => d.toLocaleString([], { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+const KIND_LABEL = { lump: 'What it pays', goal: 'How much you need', growth: 'Growth over time', versus: 'Head to head (2 images)', nowlater: 'Today vs later (2 images)' };
+
+function renderDrafts() {
+  const box = $('drafts');
+  $('nDrafts').textContent = state.drafts.length;
+  $('schedBtn').disabled = !state.drafts.length;
+  updateCost();
+  if (!state.drafts.length) {
+    box.innerHTML = `<div class="empty">No drafts yet. Pick a day and click <b>Generate queue</b> to build ${esc($('howMany').value)} posts from today's yields.</div>`;
+    return;
+  }
+  state.drafts.sort((a, b) => a.at - b.at);
+  box.innerHTML = state.drafts.map(p => {
+    const len = [...finalText(p)].length, hy = p.fund.yield >= HIGH_YIELD;
+    return `<article class="post" data-id="${p.id}">
+      <div class="pics${p.imgs.length > 1 ? ' pair' : ''}">${p.imgs.map((src, i) => `<img src="${src}" alt="Image ${i + 1} for ${esc(p.sym)} post">`).join('')}</div>
+      <div class="side">
+        <div class="meta">
+          <input type="time" value="${hhmm(p.at)}" data-act="time" aria-label="Post time">
+          <span>${p.at.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' })}</span>
+          <span class="tag${hy ? ' hy' : ''}">$${esc(p.sym)} ${pct(p.fund.yield)}</span>
+          ${p.fund2 ? `<span class="tag${p.fund2.yield >= HIGH_YIELD ? ' hy' : ''}">$${esc(p.fund2.sym)} ${pct(p.fund2.yield)}</span>` : ''}
+          ${p.sent ? '<span class="tag">Sent to X</span>' : ''}
+          <select data-act="kind" aria-label="Post type">${Object.entries(KIND_LABEL).map(([k, v]) => `<option value="${k}"${k === p.kind ? ' selected' : ''}${(k === 'growth' || k === 'nowlater') && p.fund.yield > GROWTH_MAX_YIELD ? ' disabled' : ''}>${v}</option>`).join('')}</select>
+        </div>
+        <textarea data-act="text" aria-label="Post text">${esc(p.text)}</textarea>
+        <div class="row">
+          <button class="btn small primary" data-act="manual">${p.sent ? 'Post it again' : 'Post it myself'}</button>
+          ${p.imgs.length > 1 ? '<button class="btn small" data-act="copy2">Copy image 2</button>' : ''}
+          <button class="btn small" data-act="saveimg">${p.imgs.length > 1 ? 'Save images' : 'Save image'}</button>
+          <button class="btn small" data-act="copytext">Copy text</button>
+          <button class="btn small" data-act="swap">New fund</button>
+          <button class="btn small" data-act="amount">New numbers</button>
+          <button class="btn small" data-act="rewrite">Rewrite text</button>
+          <label class="linkopt"><input type="checkbox" data-act="link"${p.link ? ' checked' : ''}> Add link ($0.20 per post instead of $0.015)</label>
+          <button class="btn small danger" data-act="remove">Remove</button>
+          <span class="chars${len > 280 ? ' over' : ''}">${len}/280</span>
+        </div>
+        ${lintText(finalText(p))}
+      </div>
+    </article>`;
+  }).join('');
+}
+function lintText(t) {
+  const issues = [];
+  if (/[—–]/.test(t)) issues.push('has a dash (em or en)');
+  if (t.split('\n').some(l => /\.\s*$/.test(l.trim()) && l.trim().length)) issues.push('a line ends with a period');
+  if (/\b(grade|rated [A-F])\b/i.test(t)) issues.push('mentions a grade');
+  if ([...t].length > 280) issues.push('over 280 characters');
+  return issues.length ? `<div class="err-text">Check: ${issues.join(', ')}</div>` : '';
+}
+function updateCost() {
+  const links = state.drafts.filter(p => p.link).length, plain = state.drafts.length - links;
+  const c = links * LINK_COST + plain * PLAIN_COST;
+  $('costNote').textContent = state.drafts.length ? `About ${usd2.format(c)} in X fees for these ${state.drafts.length}` : '';
+}
+$('drafts').addEventListener('click', e => {
+  const btn = e.target.closest('[data-act]'); if (!btn || btn.tagName === 'INPUT' || btn.tagName === 'TEXTAREA' || btn.tagName === 'SELECT') return;
+  const card = btn.closest('.post'), p = state.drafts.find(d => d.id === card.dataset.id); if (!p) return;
+  const used = new Set(state.drafts.filter(d => d !== p).map(histKey));
+  const act = btn.dataset.act;
+  if (act === 'remove') { state.drafts = state.drafts.filter(d => d !== p); renderDrafts(); return; }
+  if (act === 'manual') { postManually(p); return; }
+  if (act === 'saveimg') { saveImage(p); return; }
+  if (act === 'copy2') { copyImage(p.imgs[1]).then(() => toast('Image 2 copied. Paste it into the same X post')).catch(() => toast("Couldn't copy. Use Save images and drag both in")); return; }
+  if (act === 'copytext') { navigator.clipboard.writeText(finalText(p)).then(() => toast('Text copied'), () => toast("Couldn't copy, select the text and copy it")); return; }
+  if (act === 'swap') {
+    const fund = chooseFund(new Set(state.drafts.map(d => d.sym))); if (!fund) return toast('No other funds left in the pool');
+    const kind = (p.kind === 'growth' || p.kind === 'nowlater') && fund.yield > GROWTH_MAX_YIELD ? 'lump' : p.kind;
+    const np = makePost(fund, kind, used); if (!np) return toast('Could not find a new combo, try again');
+    np.at = p.at; np.link = p.link; Object.assign(p, np, { id: p.id });
+  } else if (act === 'amount') {
+    const np = makePost(p.fund, p.kind, used); if (!np) return toast('Every combo for this fund has been used');
+    np.at = p.at; np.link = p.link; Object.assign(p, np, { id: p.id });
+  } else if (act === 'rewrite') {
+    p.text = writeText(p);
+  }
+  renderDrafts();
+});
+$('drafts').addEventListener('change', e => {
+  const el = e.target, card = el.closest('.post'); if (!card) return;
+  const p = state.drafts.find(d => d.id === card.dataset.id); if (!p) return;
+  const act = el.dataset.act;
+  if (act === 'time') { const [h, m] = el.value.split(':').map(Number); const d = new Date(p.at); d.setHours(h, m, 0, 0); p.at = d; renderDrafts(); }
+  if (act === 'kind') {
+    const used = new Set(state.drafts.filter(d => d !== p).map(histKey));
+    const np = makePost(p.fund, el.value, used); if (!np) return toast('Every combo of that type has been used for this fund');
+    np.at = p.at; np.link = p.link; Object.assign(p, np, { id: p.id }); renderDrafts();
+  }
+  if (act === 'link') { p.link = el.checked; renderDrafts(); }
+});
+$('drafts').addEventListener('input', e => {
+  const el = e.target; if (el.dataset.act !== 'text') return;
+  const card = el.closest('.post'), p = state.drafts.find(d => d.id === card.dataset.id); if (!p) return;
+  p.text = el.value; p.edited = true;
+  const len = [...finalText(p)].length, ch = card.querySelector('.chars');
+  ch.textContent = `${len}/280`; ch.classList.toggle('over', len > 280);
+  const old = card.querySelector('.err-text'); if (old) old.remove();
+  const lint = lintText(finalText(p)); if (lint) card.querySelector('.side').insertAdjacentHTML('beforeend', lint);
+});
+
+/* =====================================================================
+   POST IT MYSELF (free, no X API)
+   Phone: opens the share sheet with the image and text, pick X.
+   Computer: copies the image, opens X with the text filled in, you paste the image.
+   ===================================================================== */
+const MANUAL_KEY = 'dpx.manual.v1';
+function manualHistory() { return safeJSON(localStorage.getItem(MANUAL_KEY)) || []; }
+function rememberManual(p) {
+  try { const h = manualHistory(); h.push(histKey(p)); localStorage.setItem(MANUAL_KEY, JSON.stringify(h.slice(-3000))); } catch (e) {}
+  state.history.add(histKey(p));
+}
+const isTouch = matchMedia('(pointer: coarse)').matches;
+function dataURLtoBlob(url) {
+  const [head, data] = url.split(','), bin = atob(data), arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  return new Blob([arr], { type: head.match(/:(.*?);/)[1] });
+}
+function saveImage(p) {
+  p.imgs.forEach((src, i) => {
+    const a = document.createElement('a'); a.href = src; a.download = `${p.sym}-dividends${p.imgs.length > 1 ? '-' + (i + 1) : ''}.png`;
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+}
+function copyImage(src) {
+  try { return navigator.clipboard.write([new ClipboardItem({ 'image/png': Promise.resolve(dataURLtoBlob(src)) })]); }
+  catch (e) { return Promise.reject(e); }
+}
+function postManually(p) {
+  // No awaits before copy/share: Safari and iPhone only allow them right after the tap.
+  const text = finalText(p), pair = p.imgs.length > 1;
+  const files = p.imgs.map((src, i) => new File([dataURLtoBlob(src)], `${p.sym}-dividends-${i + 1}.png`, { type: 'image/png' }));
+  const markSent = () => { p.sent = true; rememberManual(p); renderDrafts(); };
+  if (isTouch && navigator.canShare && navigator.canShare({ files, text })) {
+    navigator.share({ files, text })
+      .then(() => { markSent(); toast('Pick X in the share sheet. If the text is missing, tap Copy text and paste it', 8000); })
+      .catch(e => { if (e.name !== 'AbortError') toast("Couldn't open the share sheet. Use Save image instead"); });
+    return;
+  }
+  const openX = () => window.open('https://x.com/intent/post?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  copyImage(p.imgs[0]).then(() => {
+    openX(); markSent();
+    toast(pair
+      ? 'Image 1 copied. Paste it in X with Cmd+V (Ctrl+V on Windows), then come back, click Copy image 2 and paste again'
+      : 'Image copied. Click in the X post box and press Cmd+V (Ctrl+V on Windows) to add it', 10000);
+  }).catch(() => {
+    saveImage(p); openX(); markSent();
+    toast(pair ? 'Both images saved to Downloads. Drag them into the X post box together' : 'Image saved to your Downloads. Drag it into the X post box', 8000);
+  });
+}
+
+/* =====================================================================
+   GITHUB
+   ===================================================================== */
+function ghReady() { return cfg.token && cfg.owner && cfg.repo; }
+async function gh(path, opts = {}, raw = false) {
+  const r = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}${path}`, {
+    ...opts,
+    headers: { Authorization: `Bearer ${cfg.token}`, Accept: raw ? 'application/vnd.github.raw+json' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', ...(opts.body ? { 'Content-Type': 'application/json' } : {}) },
+  });
+  if (r.status === 404 && opts.allow404) return null;
+  if (!r.ok) {
+    let msg = ''; try { msg = (await r.json()).message; } catch (e) {}
+    const err = new Error(`GitHub ${r.status}${msg ? ': ' + msg : ''}`); err.status = r.status; throw err;
+  }
+  if (r.status === 204) return null;
+  return raw ? r.blob() : r.json();
+}
+const b64utf8 = s => { const bytes = new TextEncoder().encode(s); let bin = ''; bytes.forEach(b => bin += String.fromCharCode(b)); return btoa(bin); };
+async function commitFiles(files, message) {
+  // files: [{ path, b64 }] to add or [{ path, del: true }] to remove, all in one commit
+  const entries = [];
+  for (const f of files) {
+    if (f.del) { entries.push({ path: f.path, mode: '100644', type: 'blob', sha: null }); continue; }
+    const blob = await gh('/git/blobs', { method: 'POST', body: JSON.stringify({ content: f.b64, encoding: 'base64' }) });
+    entries.push({ path: f.path, mode: '100644', type: 'blob', sha: blob.sha });
+  }
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const ref = await gh(`/git/ref/heads/${cfg.branch}`);
+    const head = await gh(`/git/commits/${ref.object.sha}`);
+    const tree = await gh('/git/trees', { method: 'POST', body: JSON.stringify({ base_tree: head.tree.sha, tree: entries }) });
+    const commit = await gh('/git/commits', { method: 'POST', body: JSON.stringify({ message, tree: tree.sha, parents: [ref.object.sha] }) });
+    try { await gh(`/git/refs/heads/${cfg.branch}`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha }) }); return; }
+    catch (e) { if (e.status !== 422) throw e; await new Promise(r => setTimeout(r, 1500)); }
+  }
+  throw new Error('GitHub kept changing while saving. Try again in a minute');
+}
+async function listDir(dir) {
+  const items = await gh(`/contents/${dir}?ref=${cfg.branch}`, { allow404: true });
+  return (items || []).filter(i => i.type === 'file' && i.name !== '.gitkeep');
+}
+async function readJSON(path) {
+  const blob = await gh(`/contents/${path}?ref=${cfg.branch}`, {}, true);
+  return JSON.parse(await blob.text());
+}
+function fileBase(p) {
+  const t = p.at.toISOString().replace(/[-:]/g, '').slice(0, 13); // 20260926T1305
+  return `${t}_${histKey(p)}_${p.id}`;
+}
+function keyFromName(name) { const parts = name.replace(/\.(json|png)$/, '').split('_'); return parts.length >= 4 ? `${parts[1]}_${parts[2]}_${parts[3]}` : null; }
+
+async function loadHistory() {
+  if (!ghReady()) return;
+  try {
+    const [q, p] = await Promise.all([listDir('queue'), listDir('posted')]);
+    state.history = new Set([...q, ...p].map(f => keyFromName(f.name)).filter(Boolean).concat(manualHistory()));
+    state.historyLoaded = true;
+    $('nSched').textContent = q.filter(f => f.name.endsWith('.json')).length;
+  } catch (e) { showSetup(e.message); }
+}
+
+async function scheduleAll() {
+  if (!ghReady()) { openSettings(); return toast('Add your GitHub token first'); }
+  const bad = state.drafts.filter(p => [...finalText(p)].length > 280);
+  if (bad.length) return toast(`${bad.length} post${bad.length > 1 ? 's are' : ' is'} over 280 characters`);
+  const past = state.drafts.filter(p => p.at.getTime() < Date.now());
+  if (past.length) return toast('Some times are already in the past. Change them first');
+  const btn = $('schedBtn'); btn.disabled = true; btn.textContent = 'Scheduling…';
+  try {
+    await loadHistory();
+    const clash = state.drafts.filter(p => state.history.has(histKey(p)));
+    if (clash.length) { btn.textContent = 'Schedule all'; btn.disabled = false; return toast(`${clash.length} post${clash.length > 1 ? 's were' : ' was'} already used before. Hit New numbers on ${clash.map(p => '$' + p.sym).join(', ')}`); }
+    const files = [];
+    for (const p of state.drafts) {
+      const base = fileBase(p);
+      const record = { id: p.id, sym: p.sym, sym2: p.fund2 ? p.fund2.sym : undefined, kind: p.kind, params: p.params, yield: p.fund.yield, images: p.imgs.length, text: finalText(p), link: p.link, post_at: p.at.toISOString(), created_at: new Date().toISOString() };
+      files.push({ path: `queue/${base}.json`, b64: b64utf8(JSON.stringify(record, null, 2)) });
+      p.imgs.forEach((src, i) => files.push({ path: `queue/${base}${i ? '-' + (i + 1) : ''}.png`, b64: src.split(',')[1] }));
+    }
+    await commitFiles(files, `Queue ${state.drafts.length} posts`);
+    toast(`Scheduled ${state.drafts.length} posts`);
+    state.drafts = []; renderDrafts(); loadHistory();
+  } catch (e) { toast(e.message); }
+  btn.textContent = 'Schedule all'; btn.disabled = !state.drafts.length;
+}
+$('schedBtn').addEventListener('click', scheduleAll);
+
+/* =====================================================================
+   SCHEDULED / POSTED / FAILED
+   ===================================================================== */
+async function renderList(dir, box, opts = {}) {
+  if (!ghReady()) { box.innerHTML = `<div class="empty">Add your GitHub token in Settings to see this.</div>`; return; }
+  box.innerHTML = `<div class="empty">Loading…</div>`;
+  try {
+    let files = (await listDir(dir)).filter(f => f.name.endsWith('.json')).sort((a, b) => a.name.localeCompare(b.name));
+    if (opts.newestFirst) files.reverse();
+    if (opts.limit) files = files.slice(0, opts.limit);
+    if (dir === 'queue') $('nSched').textContent = files.length;
+    if (dir === 'failed') $('nFailed').textContent = files.length;
+    if (!files.length) { box.innerHTML = `<div class="empty">${opts.emptyText}</div>`; return; }
+    const recs = await Promise.all(files.map(async f => ({ f, r: await readJSON(f.path) })));
+    box.innerHTML = recs.map(({ f, r }) => `<article class="post" data-path="${esc(f.path)}">
+      ${opts.images ? `<div class="pics${(r.images || 1) > 1 ? ' pair' : ''}">${Array.from({ length: r.images || 1 }, (_, i) => `<img alt="Image ${i + 1} for ${esc(r.sym)} post" data-img="${esc(f.path.replace(/\.json$/, i ? '-' + (i + 1) + '.png' : '.png'))}">`).join('')}</div>` : ''}
+      <div class="side">
+        <div class="meta"><span class="tag">$${esc(r.sym)}${r.sym2 ? ' vs $' + esc(r.sym2) : ''}</span><span>${esc(KIND_LABEL[r.kind] || r.kind)}</span></div>
+        <div class="status-line">${opts.line(r)}</div>
+        <textarea readonly>${esc(r.text)}</textarea>
+        ${r.error ? `<div class="err-text">${esc(r.error)}</div>` : ''}
+        ${opts.actions ? `<div class="row">${opts.actions(r)}</div>` : ''}
+      </div></article>`).join('');
+    if (opts.images) box.querySelectorAll('img[data-img]').forEach(async img => {
+      try { img.src = URL.createObjectURL(await gh(`/contents/${img.dataset.img}?ref=${cfg.branch}`, {}, true)); } catch (e) {}
+    });
+  } catch (e) { box.innerHTML = `<div class="notice err">${esc(e.message)}</div>`; }
+}
+const showScheduled = () => renderList('queue', $('scheduled'), {
+  images: true, emptyText: 'Nothing scheduled. Generate drafts and click Schedule all',
+  line: r => `Posts ${esc(fmtWhen(new Date(r.post_at)))}${r.attempts ? `, tried ${r.attempts} time${r.attempts > 1 ? 's' : ''}` : ''}`,
+  actions: () => `<button class="btn small" data-act="now">Post now</button><button class="btn small danger" data-act="unschedule">Unschedule</button>`,
+});
+const showPosted = () => renderList('posted', $('posted'), {
+  newestFirst: true, limit: 30, emptyText: 'Nothing posted yet',
+  line: r => `Posted ${esc(fmtWhen(new Date(r.posted_at)))}, <a href="${esc(r.url)}" target="_blank" rel="noopener">Open on X</a>`,
+});
+const showFailed = () => renderList('failed', $('failed'), {
+  newestFirst: true, emptyText: 'No failed posts',
+  line: r => `Was due ${esc(fmtWhen(new Date(r.post_at)))}`,
+});
+$('scheduled').addEventListener('click', async e => {
+  const btn = e.target.closest('[data-act]'); if (!btn) return;
+  const path = btn.closest('.post').dataset.path, pngs = [...btn.closest('.post').querySelectorAll('img[data-img]')].map(i => i.dataset.img);
+  btn.disabled = true;
+  try {
+    if (btn.dataset.act === 'unschedule') {
+      await commitFiles([{ path, del: true }, ...pngs.map(x => ({ path: x, del: true }))], 'Unschedule post');
+      toast('Unscheduled');
+    } else {
+      const r = await readJSON(path); r.post_at = new Date().toISOString();
+      await commitFiles([{ path, b64: b64utf8(JSON.stringify(r, null, 2)) }], 'Post now');
+      try {
+        await gh('/actions/workflows/post.yml/dispatches', { method: 'POST', body: JSON.stringify({ ref: cfg.branch }) });
+        toast('Posting now, it should be live in a minute or two');
+      } catch (err) { toast('Moved to now. It will post on the next run, within about 15 minutes'); }
+    }
+    showScheduled(); loadHistory();
+  } catch (err) { toast(err.message); btn.disabled = false; }
+});
+$('refreshSched').addEventListener('click', showScheduled);
+$('refreshPosted').addEventListener('click', showPosted);
+$('refreshFailed').addEventListener('click', showFailed);
+
+/* =====================================================================
+   TABS, SETTINGS, BOOT
+   ===================================================================== */
+document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('nav.tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  ['drafts', 'scheduled', 'posted', 'failed'].forEach(t => $('tab-' + t).hidden = t !== b.dataset.tab);
+  if (b.dataset.tab === 'scheduled') showScheduled();
+  if (b.dataset.tab === 'posted') showPosted();
+  if (b.dataset.tab === 'failed') showFailed();
+}));
+function openSettings() {
+  $('s_token').value = cfg.token; $('s_owner').value = cfg.owner; $('s_repo').value = cfg.repo;
+  $('s_start').value = cfg.start; $('s_end').value = cfg.end; $('s_fav').value = cfg.fav; $('s_excl').value = cfg.excl; $('s_pool').value = cfg.pool;
+  $('settings').showModal();
+}
+$('settingsBtn').addEventListener('click', openSettings);
+$('settings').addEventListener('close', () => {
+  if ($('settings').returnValue !== 'save') return;
+  cfg = { ...cfg, token: $('s_token').value.trim(), owner: $('s_owner').value.trim(), repo: $('s_repo').value.trim(), start: $('s_start').value || '08:00', end: $('s_end').value || '21:00', fav: $('s_fav').value, excl: $('s_excl').value, pool: parseInt($('s_pool').value, 10) || 60 };
+  saveCfg(); showSetup(); loadHistory(); toast('Settings saved');
+});
+function showSetup(err) {
+  const box = $('setupNotice');
+  if (err) box.innerHTML = `<div class="notice err">Can't reach your GitHub repo: ${esc(err)}. Check the token and repo name in Settings.</div>`;
+  else if (!ghReady()) box.innerHTML = `<div class="notice warn">Use <b>Post it myself</b> to post for free. To have posts go out automatically, add your GitHub token in Settings.</div>`;
+  else box.innerHTML = '';
+}
+let toastTimer;
+function toast(msg, ms = 4200) {
+  document.querySelector('.toast')?.remove(); clearTimeout(toastTimer);
+  const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; t.setAttribute('role', 'status');
+  document.body.appendChild(t); toastTimer = setTimeout(() => t.remove(), ms);
+}
+$('genBtn').addEventListener('click', generate);
+
+showSetup();
+state.history = new Set(manualHistory());
+renderDrafts();
+loadHistory();
+fetch(CSV_URL + '&t=' + Date.now())
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+  .then(csv => {
+    state.funds = parseCSV(csv.trim()).slice(1).filter(c => c.length >= 12 && c[0]).map(buildFund).filter(f => f.yield !== null);
+    $('dataStatus').textContent = `${state.funds.length} funds loaded with today's yields`;
+    $('genBtn').disabled = false;
+  })
+  .catch(() => {
+    $('dataStatus').textContent = location.protocol === 'file:'
+      ? "Couldn't load the yield sheet. Open this tool from dividendprojection.com/x-queue instead of from your computer"
+      : "Couldn't load the yield sheet. Refresh to try again";
+  });
+</script>
+</body>
+</html>
