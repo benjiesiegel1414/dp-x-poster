@@ -1,0 +1,15 @@
+{
+  "id": "8a7b7684",
+  "sym": "BITO",
+  "kind": "paysneeds",
+  "params": {
+    "amt": 50000,
+    "goal": 7500
+  },
+  "yield": 61,
+  "images": 2,
+  "text": "$BITO 👇\n\n$50,000 pays about $2,542/month\n$7,500/month takes about $147,500\n\nBased on its 61% yield today\n\nAssumes the yield holds, which is never guaranteed\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-09-28T12:00:00.000Z",
+  "created_at": "2026-09-26T17:48:51.478Z"
+}
