@@ -1,0 +1,56 @@
+name: Post queued tweets
+
+on:
+  schedule:
+    # Every 15 min from 12:00 to 02:45 UTC (about 8am to 10:45pm Eastern)
+    - cron: "*/15 0-2,12-23 * * *"
+  workflow_dispatch:
+    inputs:
+      test_only:
+        description: "Only test the X connection (posts nothing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: x-poster
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests requests-oauthlib
+
+      - name: Post anything that's due
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          TEST_ONLY: ${{ inputs.test_only || 'false' }}
+        run: python scripts/post.py
+
+      - name: Save results
+        run: |
+          git config user.name "x-poster"
+          git config user.email "x-poster@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Posted queued tweets"
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
