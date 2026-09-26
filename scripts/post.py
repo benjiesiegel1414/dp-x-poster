@@ -12,6 +12,7 @@ Secrets needed (repo Settings > Secrets and variables > Actions):
 import glob
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -52,8 +53,24 @@ def upload_image(path):
     return check(r, "Image upload")["data"]["id"]
 
 
+CASHTAG = re.compile(r"\$([A-Za-z][A-Za-z.]{0,5})\b")
+
+
+def one_cashtag(text):
+    # X's API allows only one $TICKER per post. Keep the first, write the rest plain.
+    seen = {"first": None}
+
+    def fix(m):
+        if seen["first"] is None:
+            seen["first"] = m.group(1).upper()
+            return m.group(0)
+        return m.group(1)
+
+    return CASHTAG.sub(fix, text)
+
+
 def create_post(text, media_ids):
-    body = {"text": text}
+    body = {"text": one_cashtag(text)}
     if media_ids:
         body["media"] = {"media_ids": media_ids}
     r = requests.post(f"{API}/tweets", auth=AUTH, json=body, timeout=60)
