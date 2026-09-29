@@ -1,0 +1,14 @@
+{
+  "id": "26105a45",
+  "sym": "YMAX",
+  "kind": "annual",
+  "params": {
+    "amt": 125000
+  },
+  "yield": 41,
+  "images": 1,
+  "text": "$YMAX pays a 41% yield\n\n$125,000 in it could pay about $51,250 over the next 12 months\n\nPaid weekly, about $986 every week\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-01T01:00:00.000Z",
+  "created_at": "2026-09-29T20:53:45.711Z"
+}
