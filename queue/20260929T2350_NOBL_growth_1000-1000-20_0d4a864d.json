@@ -1,0 +1,16 @@
+{
+  "id": "0d4a864d",
+  "sym": "NOBL",
+  "kind": "growth",
+  "params": {
+    "start": 1000,
+    "monthly": 1000,
+    "years": 20
+  },
+  "yield": 2.1,
+  "images": 1,
+  "text": "$NOBL 👇\n\n$1,000 today + $1,000/month for 20 years\n\nWith dividends reinvested, it could pay about $526/month by year 20\n\nAssumes its current 2.1% yield holds and no price change\n\nAre you holding this one? 👇",
+  "link": false,
+  "post_at": "2026-09-29T23:50:00.000Z",
+  "created_at": "2026-09-29T20:53:23.329Z"
+}

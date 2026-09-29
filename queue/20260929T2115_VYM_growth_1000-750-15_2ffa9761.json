@@ -1,0 +1,16 @@
+{
+  "id": "2ffa9761",
+  "sym": "VYM",
+  "kind": "growth",
+  "params": {
+    "start": 1000,
+    "monthly": 750,
+    "years": 15
+  },
+  "yield": 2.5,
+  "images": 1,
+  "text": "$VYM 👇\n\n$1,000 today + $750/month for 15 years\n\nWith dividends reinvested, it could pay about $345/month by year 15\n\nAssumes its current 2.5% yield holds and no price change\n\nAre you holding this one? 👇",
+  "link": false,
+  "post_at": "2026-09-29T21:15:00.000Z",
+  "created_at": "2026-09-29T20:53:23.327Z"
+}
