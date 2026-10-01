@@ -1,0 +1,14 @@
+{
+  "id": "e597c1ae",
+  "sym": "GPIQ",
+  "kind": "goal",
+  "params": {
+    "goal": 3000
+  },
+  "yield": 10,
+  "images": 1,
+  "text": "$GPIQ: how much do you need to make $3,000 a month?\n\nAbout $360,000\n\nThat's at its current 10% yield",
+  "link": false,
+  "post_at": "2026-10-01T15:25:00.000Z",
+  "created_at": "2026-10-01T00:16:01.127Z"
+}

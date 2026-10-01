@@ -1,0 +1,14 @@
+{
+  "id": "dd27909d",
+  "sym": "IDV",
+  "kind": "goal",
+  "params": {
+    "goal": 4000
+  },
+  "yield": 4.8,
+  "images": 1,
+  "text": "$IDV: how much do you need to make $4,000 a month?\n\nAbout $1,000,000\n\nThat's at its current 4.8% yield\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-10-02T01:00:00.000Z",
+  "created_at": "2026-10-01T00:16:01.127Z"
+}

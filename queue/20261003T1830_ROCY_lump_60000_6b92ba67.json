@@ -1,0 +1,14 @@
+{
+  "id": "6b92ba67",
+  "sym": "ROCY",
+  "kind": "lump",
+  "params": {
+    "amt": 60000
+  },
+  "yield": 8,
+  "images": 1,
+  "text": "$ROCY 👇\n\n$60,000 invested pays you\n$400 every month\n$4,800 every year\n\nBased on its current 8% yield",
+  "link": false,
+  "post_at": "2026-10-03T18:30:00.000Z",
+  "created_at": "2026-10-01T00:16:01.128Z"
+}

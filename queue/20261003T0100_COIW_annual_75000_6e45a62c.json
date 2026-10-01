@@ -1,0 +1,14 @@
+{
+  "id": "6e45a62c",
+  "sym": "COIW",
+  "kind": "annual",
+  "params": {
+    "amt": 75000
+  },
+  "yield": 88,
+  "images": 1,
+  "text": "$COIW: $75,000 invested could pay you about $66,000 a year\n\nThat's at its current 88% yield\n\nPaid weekly, about $1,269 every week\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-03T01:00:00.000Z",
+  "created_at": "2026-10-01T00:16:01.127Z"
+}

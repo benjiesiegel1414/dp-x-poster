@@ -1,0 +1,15 @@
+{
+  "id": "edb6609e",
+  "sym": "SDY",
+  "kind": "paysneeds",
+  "params": {
+    "amt": 40000,
+    "goal": 500
+  },
+  "yield": 2.6,
+  "images": 2,
+  "text": "$SDY at 2.6% yield\n\nWhat $40,000 pays: about $86.67/month\nWhat $500/month takes: about $230,800\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-10-05T18:25:00.000Z",
+  "created_at": "2026-10-01T00:16:01.128Z"
+}

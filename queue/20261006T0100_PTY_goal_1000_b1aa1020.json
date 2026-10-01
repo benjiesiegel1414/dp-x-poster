@@ -1,0 +1,14 @@
+{
+  "id": "b1aa1020",
+  "sym": "PTY",
+  "kind": "goal",
+  "params": {
+    "goal": 1000
+  },
+  "yield": 11.96,
+  "images": 1,
+  "text": "$PTY: how much do you need to make $1,000 a month?\n\nAbout $100,300\n\nThat's at its current 11.96% yield\n\nWould you hold it? 👇",
+  "link": false,
+  "post_at": "2026-10-06T01:00:00.000Z",
+  "created_at": "2026-10-01T00:16:01.129Z"
+}
