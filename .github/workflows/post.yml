@@ -30,6 +30,12 @@ jobs:
 
       - run: pip install requests requests-oauthlib
 
+      - name: Find dividend news
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/news.py
+
       - name: Post anything that's due
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
