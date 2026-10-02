@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+
+  "tier1": ["O", "KO", "PEP", "JNJ", "ABBV", "MO", "T", "VZ", "PG", "HD", "JPM", "MAIN", "ARCC",
+            "SCHD", "JEPI", "JEPQ", "QQQI", "SPYI", "DIVO", "GPIQ", "MSTY", "ULTY"],
+
+  "watchlist": ["MAIN", "ARCC", "O", "STAG", "ADC", "VICI", "WPC", "EPD", "ET", "MPLX", "OKE", "BTI", "ENB", "TD", "BNS"],
+
+  "min_raise_pct": 5,
+  "streak_milestones": [10, 25, 50, 60, 70],
+
+  "daily_cap_tier1": 10,
+  "daily_cap_tier2": 6,
+  "review_hold_minutes": 20,
+  "min_gap_minutes": 30,
+  "post_window_et": [8, 21],
+  "max_claude_calls_per_run": 15
+}
