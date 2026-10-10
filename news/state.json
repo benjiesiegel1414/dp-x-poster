@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-02": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-10-03": {
       "tier1": 0,
       "tier2": 0
@@ -31,56 +27,13 @@
     "2026-10-09": {
       "tier1": 2,
       "tier2": 0
+    },
+    "2026-10-10": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/highland-global-allocation-fund-declares-monthly-distributions-of-0-085-per-share-302896614.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/highland-opportunities-and-income-fund-announces-the-regular-monthly-distribution-302896605.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/john-hancock-closed-end-funds-declare-monthly-distributions-302896568.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/alamo-group-inc-declares-regular-quarterly-dividend-302896486.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/calamos-investments-closed-end-funds-nasdaq-chi-chy-csq-cgo-chw-ccd-and-cpz-announce-monthly-distributions-and-required-notifications-of-sources-of-distribution-302896520.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/thornburg-income-builder-opportunities-trust-announces-distribution-302891749.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/duke-energy-announces-dividend-payments-to-shareholders-302896361.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/invesco-closed-end-funds-declare-dividends-302896150.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/doubleline-income-solutions-fund-declares-october-2026-distribution-302895663.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/doubleline-yield-opportunities-fund-declares-october-2026-distribution-302895646.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/cf-bankshares-inc-parent-of-cfbank-na-announces-quarterly-cash-dividend-302894857.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/doubleline-opportunistic-credit-fund-declares-october-2026-distribution-302895573.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/allspring-utilities-and-high-income-fund-erh-cusip-94987e109-important-notice-to-shareholders-302895522.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/danaos-corporation-declares-quarterly-dividend-on-its-common-stock-for-the-third-quarter-of-2026-and-an-extraordinary-special-dividend-302895932.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/neuberger-high-yield-strategies-fund-announces-monthly-distribution-302894842.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/neuberger-next-generation-connectivity-fund-inc-notice-to-shareholders---sources-of-distribution-under-section-19a-302894912.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/neuberger-real-estate-securities-income-fund-announces-monthly-distribution-302894853.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/neuberger-next-generation-connectivity-fund-announces-increase-in-distribution-rate-and-declaration-of-next-monthly-distribution-302894854.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/cvs-health-declares-quarterly-dividend-302894998.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/aberdeen-investments-us-closed-end-funds-announce-distribution-payment-details-302894967.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373462/0/en/phillips-edison-company-reaffirms-full-year-2026-earnings-guidance-increases-full-year-2026-gross-acquisitions-guidance-provides-investment-update.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373457/0/en/canfor-corporation-announces-third-quarter-results-conference-call.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373442/0/en/petrus-resources-declares-monthly-dividend-for-october-2026.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373418/0/en/plains-all-american-pipeline-and-plains-gp-holdings-announce-quarterly-distributions-and-timing-of-third-quarter-2026-earnings.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373420/0/en/national-healthcare-properties-announces-fourth-quarter-2026-common-stock-dividend.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373422/0/en/kish-bancorp-inc-declares-quarterly-cash-dividend-of-0-44-per-share.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373395/0/en/xai-floating-rate-alternative-income-trust-declares-its-monthly-common-shares-distribution-of-0-225-per-share.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373397/0/en/xai-madison-equity-premium-income-fund-declares-its-monthly-distribution-of-0-060-per-share.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373401/12288/en/armour-residential-reit-inc-confirms-october-2026-common-share-and-q4-2026-series-c-preferred-share-dividends.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373369/0/en/bank-ozk-announces-increase-to-quarterly-common-stock-dividend-and-announces-preferred-stock-dividend.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373268/35146/en/brink-s-declares-quarterly-dividend.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3373128/0/es/jpmorgan-etfs-ireland-icav-declaraci%C3%B3n-de-dividendos.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3372999/0/en/jpmorgan-etfs-ireland-icav-dividend-declaration.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3372766/0/en/watsco-declares-3-30-quarterly-dividend.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3372700/0/en/costamare-inc-declares-quarterly-dividend-on-its-preferred-and-common-stock.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/01/3372676/0/en/global-net-lease-inc-announces-common-stock-dividend-for-the-fourth-quarter-2026.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/09/30/3372454/0/en/purpose-investments-inc-announces-2026-third-quarter-distributions-for-purpose-specialty-lending-trust.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/09/30/3372454/0/fr/investissements-purpose-inc-annonce-les-distributions-du-troisi%C3%A8me-trimestre-de-2026-pour-la-fiducie-de-pr%C3%AAts-sp%C3%A9cialis%C3%A9s-purpose.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/09/30/3372118/0/en/cbrain-announces-strategic-partnership-with-djoef-and-upgrades-earnings.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/09/30/3371879/0/en/global-water-resources-declares-monthly-dividend.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/02/3373736/0/en/alta-equipment-group-announces-preferred-stock-dividend.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/saba-opportunistically-hedged-closed-end-funds-etf-cefs-announces-changes-to-distribution-rate-and-frequency-302897231.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/correction-valmet-confirms-the-key-dates-for-its-second-dividend-instalment-eur-0-67-per-share-to-be-paid-out-on-october-8--2026--302897250.html": "2026-10-02",
-    "https://www.prnewswire.com/news-releases/pnc-declares-dividend-of-2-00-on-common-stock-302897280.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/02/3374016/9057/en/pennantpark-investment-corporation-announces-monthly-distribution-of-0-08-per-share.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/02/3374019/0/en/safe-bulkers-inc-declares-quarterly-dividend-on-its-8-00-series-c-cumulative-redeemable-perpetual-preferred-shares-8-00-series-d-cumulative-redeemable-perpetual-preferred-shares.html": "2026-10-02",
-    "https://www.globenewswire.com/news-release/2026/10/02/3374020/0/en/pennantpark-floating-rate-capital-ltd-announces-monthly-distribution-of-0-0833-per-share.html": "2026-10-02",
     "https://www.prnewswire.com/news-releases/evonsys-announces-774-673-80-dividend-with-cash-or-stock-election-302870489.html": "2026-10-04",
     "https://www.globenewswire.com/news-release/2026/10/05/3374389/0/en/yieldmax-etfs-announces-distributions-on-msst-nvit-and-test.html": "2026-10-05",
     "https://www.prnewswire.com/news-releases/sabine-royalty-trust-announces-monthly-cash-distribution-for-october-2026-302897493.html": "2026-10-05",
@@ -125,7 +78,11 @@
     "https://www.prnewswire.com/news-releases/certain-aberdeen-investments-us-closed-end-funds-declare-distribution-dates-and-amounts-302903828.html": "2026-10-09",
     "https://www.prnewswire.com/news-releases/ares-dynamic-credit-allocation-fund-declares-a-monthly-distribution-of-0-1125-per-share-302903437.html": "2026-10-09",
     "https://www.prnewswire.com/news-releases/aon-announces-quarterly-cash-dividend-302903652.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/aes-announces-quarterly-dividend-302903571.html": "2026-10-09"
+    "https://www.prnewswire.com/news-releases/aes-announces-quarterly-dividend-302903571.html": "2026-10-09",
+    "https://www.prnewswire.com/news-releases/pnc-declares-dividend-of-2-00-on-common-stock-302897280.html": "2026-10-10",
+    "https://www.prnewswire.com/news-releases/correction-valmet-confirms-the-key-dates-for-its-second-dividend-instalment-eur-0-67-per-share-to-be-paid-out-on-october-8--2026--302897250.html": "2026-10-10",
+    "https://www.prnewswire.com/news-releases/saba-opportunistically-hedged-closed-end-funds-etf-cefs-announces-changes-to-distribution-rate-and-frequency-302897231.html": "2026-10-10",
+    "https://www.prnewswire.com/news-releases/highland-global-allocation-fund-declares-monthly-distributions-of-0-085-per-share-302896614.html": "2026-10-10"
   },
   "tier1_last": {
     "O": "2026-09-30",
