@@ -10,6 +10,7 @@
   "streak_milestones": [10, 25, 50, 60, 70],
 
   "daily_cap_tier1": 10,
+  "ex_date_lag_days": 3,
   "daily_cap_tier2": 6,
   "review_hold_minutes": 20,
   "min_gap_minutes": 30,

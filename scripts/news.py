@@ -6,6 +6,10 @@ Two tiers (edit news/config.json to change the lists):
 
   Tier 1  Fan favorites. Every payout gets a post on its ex-dividend day, with
           the change from the last payout and what $10,000 earns from it.
+          "Goes ex-dividend today" is only used when the post goes out on the
+          ex-date. If Yahoo's data lags (or the post slides past 9pm into the
+          next morning) it says "ex-dividend date: Oct 9" instead, plus the
+          payable date from Nasdaq when available. Lag limit: ex_date_lag_days
           Source: Yahoo Finance dividend history (stocks and ETFs).
 
   Tier 2  S&P 500 members plus your watchlist. Only real news: cuts,
@@ -112,6 +116,33 @@ def mdy(iso):
         return f"{d.month}/{d.day}"
     except (TypeError, ValueError):
         return None
+
+
+def nice_date(iso):
+    # 2026-10-09 -> Oct 9
+    d = datetime.strptime(iso[:10], "%Y-%m-%d")
+    return f"{d.strftime('%b')} {d.day}"
+
+
+def pay_date(sym, ex_iso):
+    """Payable date for the payout with this ex-date, from Nasdaq. None if unknown"""
+    hdrs = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*"}
+    want = datetime.strptime(ex_iso, "%Y-%m-%d").strftime("%m/%d/%Y")
+    for asset in ("stocks", "etf"):
+        try:
+            r = requests.get(f"https://api.nasdaq.com/api/quote/{sym.replace('.', '-')}/dividends?assetclass={asset}",
+                             headers=hdrs, timeout=20)
+            rows = ((((r.json() or {}).get("data") or {}).get("dividends") or {}).get("rows")) or []
+        except Exception:
+            continue
+        for row in rows:
+            if row.get("exOrEffDate") == want:
+                try:
+                    return datetime.strptime(row.get("paymentDate", ""), "%m/%d/%Y").date().isoformat()
+                except ValueError:
+                    return None
+    return None
 
 
 def clean_tweet(text):
@@ -227,10 +258,11 @@ def tier1(cfg, state, plans):
         ex, amt = rows[0]
         if last.get(sym) == ex:
             continue
-        if ex != TODAY_ET.isoformat():
-            # Only post on the ex-date itself. Remember older ones so we never post stale news
-            if ex < TODAY_ET.isoformat():
-                last[sym] = ex
+        if ex > TODAY_ET.isoformat():
+            continue
+        if ex < (TODAY_ET - timedelta(days=cfg.get("ex_date_lag_days", 3))).isoformat():
+            # Too old to be news. Remember it so we never post it
+            last[sym] = ex
             continue
         prev = rows[1][1]
         if prev <= 0:
@@ -246,12 +278,19 @@ def tier1(cfg, state, plans):
             vs = f"Up {pct(change)}% from {money(prev)} last payout 📈"
         else:
             vs = f"Down {pct(change)}% from {money(prev)} last payout 📉"
-        lines = ["Just in:", "", f"${sym} goes ex-dividend today 💰", "", f"{money(amt)}/share", vs]
+        pay = pay_date(sym, ex)
+        body = [f"{money(amt)}/share"]
+        if pay:
+            body.append(f"Payable {nice_date(pay)}")
+        body.append(vs)
         if price and price > 0:
             earns = 10000 / price * amt
-            lines.append(f"$10,000 invested earns about ${earns:,.0f} from this payout" if earns >= 10 else f"$10,000 invested earns about ${earns:,.2f} from this payout")
-        plans.append({"tier": 1, "sym": sym, "kind": "ex_date", "text": clean_tweet("\n".join(lines)),
-                      "priority": 5, "source": "yahoo", "mark": ("tier1_last", sym, ex)})
+            body.append(f"$10,000 invested earns about ${earns:,.0f} from this payout" if earns >= 10 else f"$10,000 invested earns about ${earns:,.2f} from this payout")
+        # "today" wording is only used if the post actually goes out on the ex-date (decided in main)
+        today_text = clean_tweet("\n".join(["Just in:", "", f"${sym} goes ex-dividend today 💰", ""] + body))
+        dated_text = clean_tweet("\n".join(["Just in:", "", f"${sym} ex-dividend date: {nice_date(ex)} 💰", ""] + body))
+        plans.append({"tier": 1, "sym": sym, "kind": "ex_date", "text": dated_text, "today_text": today_text,
+                      "ex_date": ex, "priority": 5, "source": "yahoo", "mark": ("tier1_last", sym, ex)})
 
 
 # ---------------------------------------------------------------- tier 2 sources
@@ -556,7 +595,10 @@ def main():
         else:
             hold = timedelta(minutes=cfg["review_hold_minutes"] if p["tier"] == 2 else 0)
             slot = next_slot(NOW + hold, cfg, taken)
-            enqueue(p["text"], p["sym"], p["kind"], slot, p["source"])
+            text = p["text"]
+            if p.get("ex_date") and slot.astimezone(ET_TZ).date().isoformat() == p["ex_date"]:
+                text = p["today_text"]
+            enqueue(text, p["sym"], p["kind"], slot, p["source"])
             taken.append(slot)
             today[tier_key] += 1
         if p.get("mark"):
