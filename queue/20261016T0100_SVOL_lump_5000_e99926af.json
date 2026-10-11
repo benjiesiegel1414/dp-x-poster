@@ -1,0 +1,14 @@
+{
+  "id": "e99926af",
+  "sym": "SVOL",
+  "kind": "lump",
+  "params": {
+    "amt": 5000
+  },
+  "yield": 20.4,
+  "images": 1,
+  "text": "$SVOL 👇\n\n$5,000 invested pays you\n$85.00 every month\n$1,020 every year\n\nBased on its current 20.4% yield\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-16T01:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

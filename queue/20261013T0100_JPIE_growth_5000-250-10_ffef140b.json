@@ -1,0 +1,16 @@
+{
+  "id": "ffef140b",
+  "sym": "JPIE",
+  "kind": "growth",
+  "params": {
+    "start": 5000,
+    "monthly": 250,
+    "years": 10
+  },
+  "yield": 6,
+  "images": 1,
+  "text": "$JPIE 👇\n\n$5,000 today + $250/month for 10 years\n\nWith dividends reinvested, it could pay about $251/month by year 10\n\nAssumes its current 6% yield holds and no price change\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-10-13T01:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

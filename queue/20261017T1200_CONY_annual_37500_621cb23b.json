@@ -1,0 +1,14 @@
+{
+  "id": "621cb23b",
+  "sym": "CONY",
+  "kind": "annual",
+  "params": {
+    "amt": 37500
+  },
+  "yield": 66,
+  "images": 1,
+  "text": "$CONY: what $37,500 could pay you in a year 👇\n\n$24,750\n\nAt its current 66% yield\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-17T12:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

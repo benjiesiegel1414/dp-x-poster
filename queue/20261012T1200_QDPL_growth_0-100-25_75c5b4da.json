@@ -1,0 +1,16 @@
+{
+  "id": "75c5b4da",
+  "sym": "QDPL",
+  "kind": "growth",
+  "params": {
+    "start": 0,
+    "monthly": 100,
+    "years": 25
+  },
+  "yield": 4.6,
+  "images": 1,
+  "text": "$QDPL 👇\n\n$100/month for 25 years\n\nWith dividends reinvested, it could pay about $216/month by year 25\n\nAssumes its current 4.6% yield holds and no price change",
+  "link": false,
+  "post_at": "2026-10-12T12:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

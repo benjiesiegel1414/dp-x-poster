@@ -1,0 +1,15 @@
+{
+  "id": "a5b7abd7",
+  "sym": "FDVV",
+  "kind": "nowlater",
+  "params": {
+    "amt": 12500,
+    "years": 30
+  },
+  "yield": 2.7,
+  "images": 2,
+  "text": "$FDVV 👇\n\n$12,500 pays about $28.13/month today\nReinvest every dividend for 30 years and it could pay $63.05/month\n\nAssumes its current 2.7% yield holds and no price change\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-16T12:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

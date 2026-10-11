@@ -1,0 +1,14 @@
+{
+  "id": "f9c16a5a",
+  "sym": "GIAX",
+  "kind": "annual",
+  "params": {
+    "amt": 40000
+  },
+  "yield": 24,
+  "images": 1,
+  "text": "$GIAX pays a 24% yield\n\n$40,000 in it could pay about $9,600 over the next 12 months\n\nPaid weekly, about $185 every week\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-14T12:00:00.000Z",
+  "created_at": "2026-10-11T16:18:19.161Z"
+}

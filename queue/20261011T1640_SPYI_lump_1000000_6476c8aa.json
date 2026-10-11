@@ -1,0 +1,14 @@
+{
+  "id": "6476c8aa",
+  "sym": "SPYI",
+  "kind": "lump",
+  "params": {
+    "amt": 1000000
+  },
+  "yield": 12.15,
+  "images": 1,
+  "text": "$SPYI pays about $10,125/month on a $1,000,000 investment\n\nThat's $121,500 a year at its current 12.15% yield\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-11T16:40:00.000Z",
+  "created_at": "2026-10-11T16:18:19.160Z"
+}
