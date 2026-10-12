@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-04": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-10-05": {
       "tier1": 0,
       "tier2": 0
@@ -31,10 +27,13 @@
     "2026-10-11": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-10-12": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/evonsys-announces-774-673-80-dividend-with-cash-or-stock-election-302870489.html": "2026-10-04",
     "https://www.globenewswire.com/news-release/2026/10/05/3374389/0/en/yieldmax-etfs-announces-distributions-on-msst-nvit-and-test.html": "2026-10-05",
     "https://www.prnewswire.com/news-releases/sabine-royalty-trust-announces-monthly-cash-distribution-for-october-2026-302897493.html": "2026-10-05",
     "https://www.globenewswire.com/news-release/2026/10/05/3374537/0/en/arbor-realty-trust-declares-preferred-stock-dividends.html": "2026-10-05",
