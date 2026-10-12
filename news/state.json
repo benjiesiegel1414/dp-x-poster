@@ -30,7 +30,7 @@
     },
     "2026-10-12": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -87,7 +87,8 @@
     "https://www.prnewswire.com/news-releases/bluerock-homes-trust-bhm-announces-fourth-quarter-dividends-on-series-a-preferred-stock-and-series-b-preferred-stock-302905994.html": "2026-10-12",
     "https://www.prnewswire.com/news-releases/fs-credit-opportunities-corp-fsco-declares-distributions-for-october-november-and-december-2026-302906100.html": "2026-10-12",
     "https://www.prnewswire.com/news-releases/fs-specialty-lending-fund-fssl-declares-distributions-for-october-november-and-december-2026-302906059.html": "2026-10-12",
-    "https://www.prnewswire.com/news-releases/international-paper-declares-quarterly-dividend-302906025.html": "2026-10-12"
+    "https://www.prnewswire.com/news-releases/international-paper-declares-quarterly-dividend-302906025.html": "2026-10-12",
+    "https://www.prnewswire.com/news-releases/a-o-smith-increases-quarterly-dividend-to-0-38-per-share-302906215.html": "2026-10-12"
   },
   "tier1_last": {
     "O": "2026-09-30",
