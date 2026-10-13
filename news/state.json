@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-05": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-10-06": {
       "tier1": 1,
       "tier2": 0
@@ -31,24 +27,13 @@
     "2026-10-12": {
       "tier1": 0,
       "tier2": 1
+    },
+    "2026-10-13": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/10/05/3374389/0/en/yieldmax-etfs-announces-distributions-on-msst-nvit-and-test.html": "2026-10-05",
-    "https://www.prnewswire.com/news-releases/sabine-royalty-trust-announces-monthly-cash-distribution-for-october-2026-302897493.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374537/0/en/arbor-realty-trust-declares-preferred-stock-dividends.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374613/0/en/ten-ltd-declares-dividend-on-its-series-f-cumulative-redeemable-perpetual-preferred-shares.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374977/0/en/mulvihill-split-capital-share-etf-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374979/0/en/premium-income-corporation-announces-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374980/0/en/mulvihill-enhanced-split-preferred-share-etf-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374981/0/en/mulvihill-canadian-bank-enhanced-yield-etf-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374982/0/en/mulvihill-premium-yield-declares-monthly-fund-distribution-for-its-etf-class.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374984/0/en/premium-global-income-split-fund-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374986/0/en/mulvihill-canadian-bank-etf-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3374987/0/en/mulvihill-split-preferred-share-etf-declares-monthly-distribution.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3375035/0/en/diversified-royalty-corp-announces-october-2026-cash-dividend.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3375049/0/en/agf-reports-september-2026-assets-under-management-and-fee-earning-assets.html": "2026-10-05",
-    "https://www.globenewswire.com/news-release/2026/10/05/3375049/0/fr/agf-d%C3%A9clare-le-total-de-son-actif-g%C3%A9r%C3%A9-et-de-ses-actifs-donnant-droit-%C3%A0-des-commissions-pour-septembre-2026.html": "2026-10-05",
     "https://www.globenewswire.com/news-release/2026/10/06/3375299/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html": "2026-10-06",
     "https://www.prnewswire.com/news-releases/avient-announces-sixteenth-consecutive-annual-dividend-increase-302900361.html": "2026-10-06",
     "https://www.globenewswire.com/news-release/2026/10/06/3376085/0/en/goodfellow-reports-its-results-for-the-third-quarter-ended-august-31-2026-and-declares-a-dividend.html": "2026-10-06",
