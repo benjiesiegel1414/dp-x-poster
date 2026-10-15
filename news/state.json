@@ -30,7 +30,7 @@
     },
     "2026-10-15": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -84,7 +84,10 @@
     "https://www.prnewswire.com/news-releases/terex-announces-quarterly-dividend-302909228.html": "2026-10-15",
     "https://www.prnewswire.com/news-releases/common-dividend-declared-by-nnn-reit-inc-302907530.html": "2026-10-15",
     "https://www.prnewswire.com/news-releases/wisconsin-electric-declares-quarterly-dividends-302910265.html": "2026-10-15",
-    "https://www.prnewswire.com/news-releases/wec-energy-group-declares-quarterly-dividend-302910264.html": "2026-10-15"
+    "https://www.prnewswire.com/news-releases/wec-energy-group-declares-quarterly-dividend-302910264.html": "2026-10-15",
+    "https://www.prnewswire.com/news-releases/texas-instruments-board-declares-fourth-quarter-2026-quarterly-dividend-302910562.html": "2026-10-15",
+    "https://www.prnewswire.com/news-releases/dow-declares-quarterly-dividend-of-35-cents-per-share-302910535.html": "2026-10-15",
+    "https://www.prnewswire.com/news-releases/genpact-limited-board-declares-quarterly-cash-dividend-302910246.html": "2026-10-15"
   },
   "tier1_last": {
     "O": "2026-09-30",
