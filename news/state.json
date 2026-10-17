@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-09": {
-      "tier1": 2,
-      "tier2": 0
-    },
     "2026-10-10": {
       "tier1": 0,
       "tier2": 0
@@ -31,21 +27,13 @@
     "2026-10-16": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-10-17": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/10/09/3377990/0/en/jpmorgan-announces-cash-distributions-for-the-jpmorgan-etfs.html": "2026-10-09",
-    "https://www.globenewswire.com/news-release/2026/10/09/3377990/0/fr/jpmorgan-annonce-des-distributions-en-esp%C3%A8ces-pour-les-fnb-jpmorgan.html": "2026-10-09",
-    "https://www.globenewswire.com/news-release/2026/10/09/3378043/0/en/carpenter-technology-declares-quarterly-cash-dividend.html": "2026-10-09",
-    "https://www.globenewswire.com/news-release/2026/10/09/3378069/0/en/apollo-commercial-real-estate-finance-inc-declares-initial-cash-liquidating-distribution.html": "2026-10-09",
-    "https://www.globenewswire.com/news-release/2026/10/09/3378114/12516/en/main-street-financial-services-corp-declares-quarterly-dividend.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/ameren-corporation-directors-declare-quarterly-dividend-302903753.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/lockheed-martin-declares-fourth-quarter-2026-dividend-302903859.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/vulcan-declares-quarterly-dividend-on-common-stock-302903804.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/certain-aberdeen-investments-us-closed-end-funds-declare-distribution-dates-and-amounts-302903828.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/ares-dynamic-credit-allocation-fund-declares-a-monthly-distribution-of-0-1125-per-share-302903437.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/aon-announces-quarterly-cash-dividend-302903652.html": "2026-10-09",
-    "https://www.prnewswire.com/news-releases/aes-announces-quarterly-dividend-302903571.html": "2026-10-09",
     "https://www.prnewswire.com/news-releases/pnc-declares-dividend-of-2-00-on-common-stock-302897280.html": "2026-10-10",
     "https://www.prnewswire.com/news-releases/correction-valmet-confirms-the-key-dates-for-its-second-dividend-instalment-eur-0-67-per-share-to-be-paid-out-on-october-8--2026--302897250.html": "2026-10-10",
     "https://www.prnewswire.com/news-releases/saba-opportunistically-hedged-closed-end-funds-etf-cefs-announces-changes-to-distribution-rate-and-frequency-302897231.html": "2026-10-10",
