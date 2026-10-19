@@ -1,0 +1,16 @@
+{
+  "id": "c42f7de6",
+  "sym": "SGOV",
+  "kind": "growth",
+  "params": {
+    "start": 50000,
+    "monthly": 200,
+    "years": 25
+  },
+  "yield": 3.7,
+  "images": 1,
+  "text": "$SGOV: start with $50,000, add $200 every month and reinvest every dividend\n\nIn 25 years that's about $693/month in income\n\nAssumes its current 3.7% yield holds and no price change\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-20T16:15:00.000Z",
+  "created_at": "2026-10-19T14:48:08.186Z"
+}

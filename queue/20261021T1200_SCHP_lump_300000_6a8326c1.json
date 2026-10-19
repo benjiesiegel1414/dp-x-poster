@@ -1,0 +1,14 @@
+{
+  "id": "6a8326c1",
+  "sym": "SCHP",
+  "kind": "lump",
+  "params": {
+    "amt": 300000
+  },
+  "yield": 5.1,
+  "images": 1,
+  "text": "$SCHP 👇\n\n$300,000 invested pays you\n$1,275 every month\n$15,300 every year\n\nBased on its current 5.1% yield",
+  "link": false,
+  "post_at": "2026-10-21T12:00:00.000Z",
+  "created_at": "2026-10-19T14:48:08.186Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "b26e32b3",
+  "sym": "QDPL",
+  "kind": "nowlater",
+  "params": {
+    "amt": 40000,
+    "years": 20
+  },
+  "yield": 4.5,
+  "images": 2,
+  "text": "$QDPL: what $40,000 pays you\n\nToday: about $150/month\nIn 20 years, reinvesting every dividend: about $368/month\n\nAssumes its current 4.5% yield holds and no price change\n\nWould you hold it? 👇",
+  "link": false,
+  "post_at": "2026-10-23T01:00:00.000Z",
+  "created_at": "2026-10-19T14:48:08.187Z"
+}

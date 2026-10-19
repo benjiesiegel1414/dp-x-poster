@@ -1,0 +1,14 @@
+{
+  "id": "2f9fec89",
+  "sym": "YYY",
+  "kind": "lump",
+  "params": {
+    "amt": 40000
+  },
+  "yield": 13.9,
+  "images": 1,
+  "text": "$YYY pays about $463/month on a $40,000 investment\n\nThat's $5,560 a year at its current 13.9% yield\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-10-20T12:00:00.000Z",
+  "created_at": "2026-10-19T14:48:08.185Z"
+}

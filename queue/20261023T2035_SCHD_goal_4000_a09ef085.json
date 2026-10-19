@@ -1,0 +1,14 @@
+{
+  "id": "a09ef085",
+  "sym": "SCHD",
+  "kind": "goal",
+  "params": {
+    "goal": 4000
+  },
+  "yield": 3.2,
+  "images": 1,
+  "text": "$SCHD: how much do you need to make $4,000 a month?\n\nAbout $1,500,000\n\nThat's at its current 3.2% yield",
+  "link": false,
+  "post_at": "2026-10-23T20:35:00.000Z",
+  "created_at": "2026-10-19T14:48:08.188Z"
+}

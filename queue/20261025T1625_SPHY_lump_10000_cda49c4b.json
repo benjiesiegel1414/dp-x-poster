@@ -1,0 +1,14 @@
+{
+  "id": "cda49c4b",
+  "sym": "SPHY",
+  "kind": "lump",
+  "params": {
+    "amt": 10000
+  },
+  "yield": 7.43,
+  "images": 1,
+  "text": "$SPHY pays about $61.92/month on a $10,000 investment\n\nThat's $743 a year at its current 7.43% yield\n\nWould you hold it? 👇",
+  "link": false,
+  "post_at": "2026-10-25T16:25:00.000Z",
+  "created_at": "2026-10-19T14:48:08.189Z"
+}

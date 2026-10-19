@@ -1,0 +1,14 @@
+{
+  "id": "bed67bf3",
+  "sym": "PTY",
+  "kind": "lump",
+  "params": {
+    "amt": 1000000
+  },
+  "yield": 12.1,
+  "images": 1,
+  "text": "$PTY 👇\n\n$1,000,000 invested pays you\n$10,083 every month\n$121,000 every year\n\nBased on its current 12.1% yield\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-21T20:40:00.000Z",
+  "created_at": "2026-10-19T14:48:08.187Z"
+}

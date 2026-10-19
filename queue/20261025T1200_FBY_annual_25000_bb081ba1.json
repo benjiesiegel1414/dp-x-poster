@@ -1,0 +1,14 @@
+{
+  "id": "bb081ba1",
+  "sym": "FBY",
+  "kind": "annual",
+  "params": {
+    "amt": 25000
+  },
+  "yield": 51,
+  "images": 1,
+  "text": "$FBY: $25,000 invested could pay you about $12,750 a year\n\nThat's at its current 51% yield\n\nPaid weekly, about $245 every week\n\nAssumes the yield holds, which is never guaranteed\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-25T12:00:00.000Z",
+  "created_at": "2026-10-19T14:48:08.189Z"
+}

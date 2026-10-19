@@ -1,0 +1,15 @@
+{
+  "id": "c379572a",
+  "sym": "FEPI",
+  "kind": "paysneeds",
+  "params": {
+    "amt": 5000,
+    "goal": 1000
+  },
+  "yield": 25.2,
+  "images": 2,
+  "text": "$FEPI 👇\n\n$5,000 pays about $105/month\n$1,000/month takes about $47,600\n\nBased on its current 25.2% yield\n\nAssumes the yield holds, which is never guaranteed",
+  "link": false,
+  "post_at": "2026-10-20T01:00:00.000Z",
+  "created_at": "2026-10-19T14:48:08.185Z"
+}

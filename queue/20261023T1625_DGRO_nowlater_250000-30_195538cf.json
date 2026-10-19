@@ -1,0 +1,15 @@
+{
+  "id": "195538cf",
+  "sym": "DGRO",
+  "kind": "nowlater",
+  "params": {
+    "amt": 250000,
+    "years": 30
+  },
+  "yield": 2,
+  "images": 2,
+  "text": "$DGRO: what $250,000 pays you\n\nToday: about $417/month\nIn 30 years, reinvesting every dividend: about $758/month\n\nAssumes its current 2% yield holds and no price change\n\nAre you holding this one? 👇",
+  "link": false,
+  "post_at": "2026-10-23T16:25:00.000Z",
+  "created_at": "2026-10-19T14:48:08.188Z"
+}
