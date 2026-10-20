@@ -30,7 +30,7 @@
     },
     "2026-10-20": {
       "tier1": 0,
-      "tier2": 1
+      "tier2": 2
     }
   },
   "seen": {
@@ -78,7 +78,9 @@
     "https://www.prnewswire.com/news-releases/bce-reports-results-of-series-s-and-t-preferred-share-conversions-857651337.html": "2026-10-20",
     "https://www.prnewswire.com/news-releases/west-declares-quarterly-dividend-302913197.html": "2026-10-20",
     "https://www.prnewswire.com/news-releases/aep-increases-quarterly-dividend-to-97-cents-a-share-302914234.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/southern-company-announces-quarterly-dividend-302914314.html": "2026-10-20"
+    "https://www.prnewswire.com/news-releases/southern-company-announces-quarterly-dividend-302914314.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/matson-announces-quarterly-dividend-of-0-38-per-share-302913571.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/rollins-inc-increases-regular-quarterly-cash-dividend-302914529.html": "2026-10-20"
   },
   "tier1_last": {
     "O": "2026-09-30",
