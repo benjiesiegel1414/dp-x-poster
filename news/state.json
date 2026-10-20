@@ -30,7 +30,7 @@
     },
     "2026-10-20": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -66,7 +66,17 @@
     "https://www.prnewswire.com/news-releases/cms-energys-board-of-directors-declares-quarterly-dividend-on-common-stock-302912757.html": "2026-10-19",
     "https://www.prnewswire.com/news-releases/community-heritage-financial-inc-announces-third-quarter-2026-dividend-302913015.html": "2026-10-19",
     "https://www.prnewswire.com/news-releases/western-midstream-announces-third-quarter-2026-distribution-and-earnings-conference-call-302912911.html": "2026-10-19",
-    "https://www.prnewswire.com/news-releases/ally-financial-declares-dividend-on-common-stock-and-series-c-and-series-d-preferred-stock-302912982.html": "2026-10-19"
+    "https://www.prnewswire.com/news-releases/ally-financial-declares-dividend-on-common-stock-and-series-c-and-series-d-preferred-stock-302912982.html": "2026-10-19",
+    "https://www.prnewswire.com/news-releases/san-juan-basin-royalty-trust-declares-no-cash-distribution-for-october-2026-302913997.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/cross-timbers-royalty-trust-declares-october-cash-distribution-302913643.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/permian-basin-royalty-trust-announces-october-cash-distribution-and-excess-cost-position-on-waddell-ranch-properties-302913181.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/permrock-royalty-trust-declares-monthly-cash-distribution-302912214.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302913622.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/peoples-bancorp-inc-declares-quarterly-dividend-302913067.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/mercantile-bank-corporation-declares-regular-cash-dividend-302912984.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/bce-reports-results-of-series-s-and-t-preferred-share-conversions-302913268.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/bce-reports-results-of-series-s-and-t-preferred-share-conversions-857651337.html": "2026-10-20",
+    "https://www.prnewswire.com/news-releases/west-declares-quarterly-dividend-302913197.html": "2026-10-20"
   },
   "tier1_last": {
     "O": "2026-09-30",
