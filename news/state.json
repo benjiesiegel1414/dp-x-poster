@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-13": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-10-14": {
       "tier1": 1,
       "tier2": 0
@@ -31,14 +27,13 @@
     "2026-10-20": {
       "tier1": 0,
       "tier2": 2
+    },
+    "2026-10-21": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/cmc-announces-quarterly-dividend-of-0-20-per-share-302907091.html": "2026-10-13",
-    "https://www.prnewswire.com/news-releases/penn-mutual-announces-record-dividend-award-for-2027-302906138.html": "2026-10-13",
-    "https://www.prnewswire.com/news-releases/realty-income-announces-676th-consecutive-common-stock-monthly-dividend-302907388.html": "2026-10-13",
-    "https://www.prnewswire.com/news-releases/thor-industries-announces-increased-regular-quarterly-dividend-302907480.html": "2026-10-13",
-    "https://www.prnewswire.com/news-releases/dupont-announces-regular-quarterly-dividend-on-common-stock-302907612.html": "2026-10-13",
     "https://www.prnewswire.com/news-releases/howmet-aerospace-board-approves-common-stock-dividend-302907912.html": "2026-10-14",
     "https://www.prnewswire.com/news-releases/caterpillar-inc-maintains-dividend-302908600.html": "2026-10-14",
     "https://www.prnewswire.com/news-releases/eqt-increases-base-dividend-302908988.html": "2026-10-14",
