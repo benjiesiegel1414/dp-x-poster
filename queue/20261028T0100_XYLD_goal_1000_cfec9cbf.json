@@ -1,0 +1,14 @@
+{
+  "id": "cfec9cbf",
+  "sym": "XYLD",
+  "kind": "goal",
+  "params": {
+    "goal": 1000
+  },
+  "yield": 9,
+  "images": 1,
+  "text": "$XYLD: how much do you need to make $1,000 a month?\n\nAbout $133,300\n\nThat's at its current 9% yield\n\nWhat would you put in? 👇",
+  "link": false,
+  "post_at": "2026-10-28T01:00:00.000Z",
+  "created_at": "2026-10-26T14:34:47.802Z"
+}

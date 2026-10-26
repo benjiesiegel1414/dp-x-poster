@@ -1,0 +1,15 @@
+{
+  "id": "3069b1f3",
+  "sym": "SCHD",
+  "kind": "paysneeds",
+  "params": {
+    "amt": 75000,
+    "goal": 4000
+  },
+  "yield": 3.2,
+  "images": 2,
+  "text": "$SCHD at 3.2% yield\n\nWhat $75,000 pays: about $200/month\nWhat $4,000/month takes: about $1,500,000\n\nHow much do you own? 👇",
+  "link": false,
+  "post_at": "2026-10-26T14:55:00.000Z",
+  "created_at": "2026-10-26T14:34:47.801Z"
+}
