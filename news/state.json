@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-20": {
-      "tier1": 0,
-      "tier2": 2
-    },
     "2026-10-21": {
       "tier1": 3,
       "tier2": 0
@@ -31,46 +27,13 @@
     "2026-10-27": {
       "tier1": 0,
       "tier2": 1
+    },
+    "2026-10-28": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/san-juan-basin-royalty-trust-declares-no-cash-distribution-for-october-2026-302913997.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/cross-timbers-royalty-trust-declares-october-cash-distribution-302913643.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/permian-basin-royalty-trust-announces-october-cash-distribution-and-excess-cost-position-on-waddell-ranch-properties-302913181.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/permrock-royalty-trust-declares-monthly-cash-distribution-302912214.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302913622.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/peoples-bancorp-inc-declares-quarterly-dividend-302913067.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/mercantile-bank-corporation-declares-regular-cash-dividend-302912984.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/bce-reports-results-of-series-s-and-t-preferred-share-conversions-302913268.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/bce-reports-results-of-series-s-and-t-preferred-share-conversions-857651337.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/west-declares-quarterly-dividend-302913197.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/aep-increases-quarterly-dividend-to-97-cents-a-share-302914234.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/southern-company-announces-quarterly-dividend-302914314.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/matson-announces-quarterly-dividend-of-0-38-per-share-302913571.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/rollins-inc-increases-regular-quarterly-cash-dividend-302914529.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/m-amp-t-bank-corporation-announces-quarterly-preferred-stock-dividends-896095590.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/ovbc-announces-cash-dividend-302914623.html": "2026-10-20",
-    "https://www.prnewswire.com/news-releases/dana-to-pay-dividend-on-common-stock-302914534.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384997/0/en/mullen-group-ltd-announces-declaration-of-monthly-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384995/12288/en/armour-residential-reit-inc-announces-november-2026-dividend-rate-per-common-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384985/0/en/river-valley-community-bancorp-announces-financial-results-unaudited-for-the-quarter-ended-september-30-2026-and-an-increase-in-its-quarterly-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384935/0/en/valley-national-bancorp-declares-its-regular-quarterly-preferred-and-common-stock-dividends.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384945/0/en/getty-realty-corp-announces-increased-quarterly-cash-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384909/36248/en/independent-bank-corporation-announces-quarterly-cash-dividend-on-common-stock.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384740/26553/en/sonoco-declares-regular-quarterly-common-stock-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384508/0/en/income-financial-declares-monthly-distribution.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384512/0/en/financial-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384514/0/en/dividend-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384516/0/en/north-american-financial-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384519/0/en/prime-dividend-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384521/0/en/dividend-15-split-corp-ii-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384522/0/en/canadian-life-companies-split-corp-declares-class-a-preferred-share-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384524/0/en/us-financial-15-split-corp-preferred-dividend-declared.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384526/0/en/commerce-split-monthly-payments-declared-for-capital-share-and-preferred-shares.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384528/0/en/tdb-split-corp-regular-monthly-dividend-declaration-for-class-a-priority-equity-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384529/0/en/canadian-banc-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384530/0/en/dividend-select-15-corp-declares-monthly-dividend.html": "2026-10-20",
-    "https://www.globenewswire.com/news-release/2026/10/20/3384531/0/en/monthly-distribution-declared-for-quadravest-preferred-split-share-etf.html": "2026-10-20",
     "https://www.prnewswire.com/news-releases/yum-china-announces-disclosure-under-hong-kong-stock-exchange-rules-in-relation-to-a-possible-quarterly-dividend-302915252.html": "2026-10-21",
     "https://www.prnewswire.com/news-releases/labcorp-declares-quarterly-dividend-302914707.html": "2026-10-21",
     "https://www.prnewswire.com/news-releases/quad-declares-quarterly-dividend-of-0-10-per-share-302914598.html": "2026-10-21",
