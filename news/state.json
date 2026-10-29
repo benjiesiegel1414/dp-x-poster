@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-21": {
-      "tier1": 3,
-      "tier2": 0
-    },
     "2026-10-22": {
       "tier1": 1,
       "tier2": 0
@@ -31,24 +27,13 @@
     "2026-10-28": {
       "tier1": 1,
       "tier2": 2
+    },
+    "2026-10-29": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/yum-china-announces-disclosure-under-hong-kong-stock-exchange-rules-in-relation-to-a-possible-quarterly-dividend-302915252.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/labcorp-declares-quarterly-dividend-302914707.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/quad-declares-quarterly-dividend-of-0-10-per-share-302914598.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/prosperity-bancshares-inc-increases-common-stock-dividend-302914888.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/first-community-corporation-announces-third-quarter-results-and-cash-dividend-302914913.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/qualcomm-announces-quarterly-cash-dividend-302914728.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/uwharrie-capital-corp-declares-stock-dividend-302915802.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/sherwin-williams-declares-dividend-of-0-80-per-common-share-302915845.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/lazard-declares-quarterly-dividend-of-0-50-per-share-302915641.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/bank-of-america-declares-fourth-quarter-2026-stock-dividends-302915305.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/ibm-releases-third-quarter-results-302915985.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/siriusxm-declares-quarterly-cash-dividend-302915963.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/regal-rexnord-corporation-declares-quarterly-dividend-of-35-per-share-302915976.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/civista-bancshares-inc-announces-fourth-quarter-common-dividend-302915634.html": "2026-10-21",
-    "https://www.prnewswire.com/news-releases/norfolk-southern-declares-quarterly-dividend-302916117.html": "2026-10-21",
     "https://www.prnewswire.com/news-releases/ardagh-metal-packaging-sa-declares-quarterly-dividend-302915438.html": "2026-10-22",
     "https://www.prnewswire.com/news-releases/suburban-propane-partners-lp-declares-increase-in-annualized-distribution-rate-to-1-40-per-common-unit-302916031.html": "2026-10-22",
     "https://www.prnewswire.com/news-releases/encompass-health-declares-dividend-on-common-stock-302916961.html": "2026-10-22",
