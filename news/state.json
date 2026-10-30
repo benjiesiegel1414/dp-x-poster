@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-22": {
-      "tier1": 1,
-      "tier2": 0
-    },
     "2026-10-23": {
       "tier1": 1,
       "tier2": 0
@@ -31,27 +27,13 @@
     "2026-10-29": {
       "tier1": 2,
       "tier2": 0
+    },
+    "2026-10-30": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/ardagh-metal-packaging-sa-declares-quarterly-dividend-302915438.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/suburban-propane-partners-lp-declares-increase-in-annualized-distribution-rate-to-1-40-per-common-unit-302916031.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/encompass-health-declares-dividend-on-common-stock-302916961.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/standex-declares-249th-consecutive-quarterly-dividend-302916999.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/air-products-declares-quarterly-dividend-302917309.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/metrocity-bankshares-inc-declares-quarterly-cash-dividend-302917304.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/agco-announces-quarterly-dividend-302917231.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/nextera-energy-board-declares-quarterly-dividend-302917359.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/fnb-corporation-declares-cash-dividend-of-0-13-on-common-stock-302917380.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/mosaic-announces-quarterly-dividend-of-0-22-per-share-302917381.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/carnival-corporation-declares-dividend-302917310.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/crown-holdings-inc-declares-quarterly-dividend-302917280.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/potomac-bancshares-declares-quarterly-cash-dividend-302917369.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/lazard-global-total-return-and-income-fund-declares-monthly-distribution-and-issues-estimated-sources-of-the-distribution-announced-in-september-302917400.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/huntington-bancshares-incorporated-declares-quarterly-cash-dividends-on-its-common-and-preferred-stocks-302917407.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/the-jm-smucker-co-declares-dividend-302917423.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/vylor-declares-quarterly-dividend-302917422.html": "2026-10-22",
-    "https://www.prnewswire.com/news-releases/cboe-global-markets-announces-increase-in-share-repurchase-authorization-declares-fourth-quarter-2026-dividend-302917368.html": "2026-10-22",
     "https://www.prnewswire.com/news-releases/first-citizens-bancshares-declares-dividends-302917440.html": "2026-10-23",
     "https://www.prnewswire.com/news-releases/corteva-declares-quarterly-dividend-302917451.html": "2026-10-23",
     "https://www.prnewswire.com/news-releases/simpson-manufacturing-co-inc-declares-quarterly-dividend-302917543.html": "2026-10-23",
