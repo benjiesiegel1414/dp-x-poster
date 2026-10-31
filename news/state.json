@@ -29,7 +29,7 @@
       "tier2": 0
     },
     "2026-10-30": {
-      "tier1": 0,
+      "tier1": 1,
       "tier2": 0
     }
   },
@@ -121,7 +121,7 @@
     "https://www.prnewswire.com/news-releases/neuberger-real-estate-securities-income-fund-announces-monthly-distribution-302924386.html": "2026-10-30"
   },
   "tier1_last": {
-    "O": "2026-09-30",
+    "O": "2026-10-30",
     "KO": "2026-09-15",
     "PEP": "2026-09-04",
     "JNJ": "2026-08-25",
