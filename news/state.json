@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-26": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-10-27": {
       "tier1": 0,
       "tier2": 1
@@ -31,20 +27,13 @@
     "2026-11-02": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-03": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/lilly-declares-fourth-quarter-2026-dividend-302919496.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/albemarle-announces-quarterly-common-stock-dividend-302919761.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/alliancebernstein-global-high-income-fund-inc-releases-monthly-portfolio-update-302919805.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/alliancebernstein-closed-end-funds-announce-distribution-rates-302919763.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/alliancebernstein-national-municipal-income-fund-inc-releases-monthly-portfolio-update-302919785.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/adecoagro-announces-declaration-of-cash-dividends-302919768.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/columbus-mckinnon-declares-quarterly-dividend-of-0-07-per-share-302919846.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/bladex-announces-quarterly-dividend-payment-for-third-quarter-2026-302919791.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/kansas-city-life-declares-quarterly-dividend-302919972.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/gerdau-sa--consolidated-information-302919958.html": "2026-10-26",
-    "https://www.prnewswire.com/news-releases/first-horizon-declares-cash-dividends-on-common-and-preferred-stock-302919991.html": "2026-10-26",
     "https://www.prnewswire.com/news-releases/ares-capital-corporation-announces-september-30--2026-financial-results-and-declares-fourth-quarter-2026-dividend-of-0-48-per-share-dividend-declarations-302920435.html": "2026-10-27",
     "https://www.prnewswire.com/news-releases/blueharbor-bank-announces-cash-dividend-302920914.html": "2026-10-27",
     "https://www.prnewswire.com/news-releases/northwestern-mutual-announces-record-10-4-billion-expected-dividend-payout-for-2027--the-largest-in-company-history-302918420.html": "2026-10-27",
