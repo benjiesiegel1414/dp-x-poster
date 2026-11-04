@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-27": {
-      "tier1": 0,
-      "tier2": 1
-    },
     "2026-10-28": {
       "tier1": 1,
       "tier2": 2
@@ -31,34 +27,13 @@
     "2026-11-03": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-04": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/ares-capital-corporation-announces-september-30--2026-financial-results-and-declares-fourth-quarter-2026-dividend-of-0-48-per-share-dividend-declarations-302920435.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/blueharbor-bank-announces-cash-dividend-302920914.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/northwestern-mutual-announces-record-10-4-billion-expected-dividend-payout-for-2027--the-largest-in-company-history-302918420.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/woodlands-financial-services-company-announces-fourth-quarter-cash-dividend-302920995.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/mplx-lp-increases-quarterly-distribution-302921030.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/capitol-federal-financial-inc-announces-quarterly-dividend-and-stock-buyback-update-302921124.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/american-water-announces-quarterly-dividend-302921180.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/tetragon-financial-group-limited-announcement-of-dividend-and-intention-to-conduct-tender-offer-302921156.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/associated-banc-corp-announces-increase-in-common-stock-dividend-302921219.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/charter-declares-quarterly-cash-dividend-on-series-a-cumulative-redeemable-preferred-stock-302921225.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/truist-declares-common-and-preferred-stock-dividends-302921188.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/federal-signal-corporation-declares-dividend-of-0-15-per-share-302921212.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/summit-hotel-properties-declares-third-quarter-2026-dividends-302921256.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/board-declares-quarterly-dividend-302920750.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/chemours-announces-fourth-quarter-dividend-302921018.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/nexpoint-real-estate-finance-inc-announces-quarterly-dividend-302921249.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/nexpoint-diversified-real-estate-trust-announces-quarterly-distribution-302921241.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/nexpoint-residential-trust-inc-announces-quarterly-dividend-302921231.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/cohen--steers-total-return-realty-fund-inc-rfi-notification-of-sources-of-distribution-under-section-19a-302921340.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/cohen--steers-closed-end-opportunity-fund-inc-fof-notification-of-sources-of-distribution-under-section-19a-302921339.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/cohen--steers-quality-income-realty-fund-inc-rqi-notification-of-sources-of-distribution-under-section-19a-302921336.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/ferrovial-nv-announces-an-interim-scrip-dividend-302921335.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/cohen--steers-infrastructure-fund-inc-utf-notification-of-sources-of-distribution-under-section-19a-302921324.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/amgen-announces-2026-fourth-quarter-dividend-893860814.html": "2026-10-27",
-    "https://www.prnewswire.com/news-releases/arthur-j-gallagher--co-announces-regular-fourth-quarter-dividend-302921370.html": "2026-10-27",
     "https://www.prnewswire.com/news-releases/infrastructure-capital-announces-dividends-for-its-bond-income-etf-bnds-equity-income-etf-icap-small-cap-income-etf-scap-and-nasdaq-option-income-etf-qvol-302921727.html": "2026-10-28",
     "https://www.prnewswire.com/news-releases/stepan-increases-quarterly-cash-dividend-marking-the-59th-consecutive-year-of-increases-302921459.html": "2026-10-28",
     "https://www.prnewswire.com/news-releases/flagstar-bank-na-declares-quarterly-cash-dividends-on-its-common-stock-and-preferred-stocks-302921216.html": "2026-10-28",
