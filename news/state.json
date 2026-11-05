@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-28": {
-      "tier1": 1,
-      "tier2": 2
-    },
     "2026-10-29": {
       "tier1": 2,
       "tier2": 0
@@ -31,22 +27,13 @@
     "2026-11-04": {
       "tier1": 1,
       "tier2": 1
+    },
+    "2026-11-05": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/infrastructure-capital-announces-dividends-for-its-bond-income-etf-bnds-equity-income-etf-icap-small-cap-income-etf-scap-and-nasdaq-option-income-etf-qvol-302921727.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/stepan-increases-quarterly-cash-dividend-marking-the-59th-consecutive-year-of-increases-302921459.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/flagstar-bank-na-declares-quarterly-cash-dividends-on-its-common-stock-and-preferred-stocks-302921216.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/els-declares-fourth-quarter-2026-dividend-302922194.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/grainger-declares-quarterly-dividend-302922258.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/canadian-pacific-kansas-city-limited-declares-dividend-302922349.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/hennessy-advisors-inc-announces-dividend-302922399.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/equinix-declares-quarterly-dividend-on-its-common-stock-302922557.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/honeywell-aerospace-declares-first-quarterly-cash-dividend-302921801.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/capital-properties-inc-declares-regular-quarterly-dividend-302922730.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/the-cigna-group-declares-quarterly-dividend-302922675.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/st-bancorp-inc-increases-quarterly-cash-dividend-302922757.html": "2026-10-28",
-    "https://www.prnewswire.com/news-releases/marathon-petroleum-corp-increases-quarterly-dividend-302922801.html": "2026-10-28",
     "https://www.prnewswire.com/news-releases/blue-owl-capital-inc-third-quarter-2026-results-302923017.html": "2026-10-29",
     "https://www.prnewswire.com/news-releases/hershey-declares-quarterly-dividends-302922692.html": "2026-10-29",
     "https://www.prnewswire.com/news-releases/the-mexico-fund-inc-pays-distribution-302915869.html": "2026-10-29",
