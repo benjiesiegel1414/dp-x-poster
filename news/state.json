@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-10-29": {
-      "tier1": 2,
-      "tier2": 0
-    },
     "2026-10-30": {
       "tier1": 1,
       "tier2": 0
@@ -31,28 +27,13 @@
     "2026-11-05": {
       "tier1": 1,
       "tier2": 1
+    },
+    "2026-11-06": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/blue-owl-capital-inc-third-quarter-2026-results-302923017.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/hershey-declares-quarterly-dividends-302922692.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/the-mexico-fund-inc-pays-distribution-302915869.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/peoples-ltd-declares-cash-and-stock-dividend-302923874.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/northeast-indiana-bancorp-inc-increases-quarterly-cash-dividend-302923917.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/perrigo-announces-quarterly-dividend-302923980.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/mgic-investment-corporation-announces-quarterly-dividend-302924109.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/north-european-oil-royalty-trust-announces-the-distribution-for-the-fourth-quarter-of-fiscal-2026-302924119.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/esquire-financial-holdings-inc-declares-regular-quarterly-dividend-for-common-stockholders-302924107.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/cohen--steers-inc-declares-quarterly-dividend-302924252.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/robert-half-announces-quarterly-dividend-302924242.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/stanley-black--decker-announces-4th-quarter-2026-dividend-302924213.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/select-water-solutions-announces-quarterly-cash-dividend-of-0-07-per-share-302922535.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/vistra-declares-dividend-on-common-stock-series-b-preferred-stock-and-series-c-preferred-stock-302924208.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/otis-declares-quarterly-dividend-of-0-44-per-share-302924212.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/rtx-board-of-directors-declares-quarterly-cash-dividend-302924052.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/bristow-group-declares-cash-dividend-302924265.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/weis-markets-announces-quarterly-dividend-302924305.html": "2026-10-29",
-    "https://www.prnewswire.com/news-releases/polaris-declares-regular-cash-dividend-302924308.html": "2026-10-29",
     "https://www.prnewswire.com/news-releases/nomad-foods-declares-quarterly-dividend-302924285.html": "2026-10-30",
     "https://www.prnewswire.com/news-releases/allspring-closed-end-funds-declare-monthly-distributions-302921859.html": "2026-10-30",
     "https://www.prnewswire.com/news-releases/standard-motor-products-inc-releases-third-quarter-2026-results-and-quarterly-dividend-302924569.html": "2026-10-30",
