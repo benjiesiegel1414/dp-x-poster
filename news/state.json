@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-01": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-11-02": {
       "tier1": 0,
       "tier2": 0
@@ -29,6 +25,10 @@
       "tier2": 0
     },
     "2026-11-08": {
+      "tier1": 0,
+      "tier2": 0
+    },
+    "2026-11-09": {
       "tier1": 0,
       "tier2": 0
     }
@@ -136,7 +136,8 @@
     "https://www.prnewswire.com/news-releases/tetragon-financial-group-limited-dividend-information-in-respect-of-q3-2026-302932146.html": "2026-11-06",
     "https://www.prnewswire.com/news-releases/new-england-realty-associates-lp-announces-fourth-quarter-distribution-on-class-a-units-and-depositary-receipts-302932214.html": "2026-11-06",
     "https://www.prnewswire.com/news-releases/havertys-furniture-fourth-quarter-2026-cash-dividend-302932325.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/dover-declares-regular-quarterly-cash-dividend-302932405.html": "2026-11-06"
+    "https://www.prnewswire.com/news-releases/dover-declares-regular-quarterly-cash-dividend-302932405.html": "2026-11-06",
+    "https://www.prnewswire.com/news-releases/strathcona-resources-ltd-reports-third-quarter-2026-financial-and-operating-results-and-announces-quarterly-dividend-302932929.html": "2026-11-09"
   },
   "tier1_last": {
     "O": "2026-10-30",
