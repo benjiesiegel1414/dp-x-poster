@@ -30,7 +30,7 @@
     },
     "2026-11-10": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -135,7 +135,8 @@
     "https://www.prnewswire.com/news-releases/autoliv-declares-increased-quarterly-dividend-302933998.html": "2026-11-09",
     "https://www.prnewswire.com/news-releases/the-aaon-group-announces-quarterly-cash-dividend-302934292.html": "2026-11-10",
     "https://www.prnewswire.com/news-releases/virginia-national-bankshares-corporation-announces-stock-and-cash-dividends-302934442.html": "2026-11-10",
-    "https://www.prnewswire.com/news-releases/federated-hermes-premier-municipal-income-fund-declares-dividend-302934970.html": "2026-11-10"
+    "https://www.prnewswire.com/news-releases/federated-hermes-premier-municipal-income-fund-declares-dividend-302934970.html": "2026-11-10",
+    "https://www.prnewswire.com/news-releases/loews-corporation-announces-quarterly-dividend-on-common-stock-302935170.html": "2026-11-10"
   },
   "tier1_last": {
     "O": "2026-10-30",
