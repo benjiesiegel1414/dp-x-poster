@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-02": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-11-03": {
       "tier1": 0,
       "tier2": 0
@@ -31,20 +27,13 @@
     "2026-11-09": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-10": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/first-resource-bancorp-inc-announces-quarterly-cash-dividend-302924546.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/allspring-utilities-and-high-income-fund-erh-cusip-94987e109-important-notice-to-shareholders-302925135.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/doubleline-income-solutions-fund-declares-november-2026-distribution-302926039.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/doubleline-yield-opportunities-fund-declares-november-2026-distribution-302926030.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/doubleline-opportunistic-credit-fund-declares-november-2026-distribution-302926010.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/invesco-closed-end-funds-declare-dividends-302926053.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/john-hancock-closed-end-funds-declare-monthly-distributions-302926958.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/calamos-investments-closed-end-funds-nasdaq-chi-chy-csq-cgo-chw-ccd-and-cpz-announce-monthly-distributions-and-required-notifications-of-sources-of-distribution-302926934.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/thornburg-income-builder-opportunities-trust-announces-distribution-302923975.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/nexpoint-diversified-real-estate-trust-announces-preferred-share-distribution-302926767.html": "2026-11-02",
-    "https://www.prnewswire.com/news-releases/highland-opportunities-and-income-fund-announces-the-regular-monthly-distribution-302927025.html": "2026-11-02",
     "https://www.globenewswire.com/news-release/2026/11/02/3393820/0/en/petrus-resources-declares-monthly-dividend-for-november-2026.html": "2026-11-03",
     "https://www.globenewswire.com/news-release/2026/11/02/3393802/16530/en/guggenheim-investments-announces-november-2026-closed-end-fund-distributions.html": "2026-11-03",
     "https://www.globenewswire.com/news-release/2026/11/02/3393787/0/en/california-resources-corporation-reports-third-quarter-2026-financial-and-operating-results.html": "2026-11-03",
