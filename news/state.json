@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-03": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-11-04": {
       "tier1": 1,
       "tier2": 1
@@ -31,38 +27,13 @@
     "2026-11-10": {
       "tier1": 1,
       "tier2": 1
+    },
+    "2026-11-11": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/11/02/3393820/0/en/petrus-resources-declares-monthly-dividend-for-november-2026.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393802/16530/en/guggenheim-investments-announces-november-2026-closed-end-fund-distributions.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393787/0/en/california-resources-corporation-reports-third-quarter-2026-financial-and-operating-results.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393784/0/en/midland-states-bancorp-inc-announces-common-stock-and-preferred-stock-dividends.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393768/0/en/stifel-declares-quarterly-common-stock-cash-dividend-and-declares-preferred-stock-cash-dividend.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393769/0/en/athene-holding-ltd-declares-fourth-quarter-2026-preferred-stock-dividends.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393758/0/en/postal-realty-trust-declares-third-quarter-2026-dividend.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393748/0/en/xai-floating-rate-alternative-income-trust-declares-its-monthly-common-shares-distribution-of-0-225-per-share.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393752/0/en/westlake-chemical-partners-lp-announces-third-quarter-2026-distribution.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393753/0/en/xai-madison-equity-premium-income-fund-declares-its-monthly-distribution-of-0-060-per-share.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393717/0/en/ten-ltd-declares-dividend-on-its-series-e-cumulative-perpetual-preferred-shares.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393709/0/en/gibson-energy-declares-dividend.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393702/12825/en/astec-announces-quarterly-dividend.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393630/0/en/bel-fuse-inc-announces-regular-quarterly-cash-dividend-on-its-class-a-and-class-b-shares.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393262/0/en/twin-disc-approves-a-quarterly-cash-dividend.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393240/0/en/robin-energy-declares-special-dividend-of-0-10-per-share.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393221/0/en/diversified-royalty-corp-announces-november-2026-cash-dividend-and-q3-2026-earnings-release-date.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393058/0/en/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-0-095-per-share-for-november-2026.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3393013/0/en/macerich-declares-the-quarterly-dividend-on-its-common-shares.html": "2026-11-03",
-    "https://www.globenewswire.com/news-release/2026/11/02/3392965/0/en/yieldmax-etfs-announces-distributions-on-msst-nvit-and-test.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/main-street-announces-first-quarter-2027-regular-monthly-dividends-including-a-monthly-dividend-increase-and-supplemental-dividend-payable-in-december-2026-302927197.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/altaba-announces-liquidating-distribution-of-0-36-per-share-302928090.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/first-industrial-declares-common-stock-dividends-302928471.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/tronox-declares-fourth-quarter-2026-dividend-302928350.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/solstice-advanced-materials-declares-dividend-of-0-075-per-common-share-302926924.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/report-of-earnings-and-dividend-declaration-302928502.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/boardwalk-reit-reports-q3-2026-results-302928457.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/3m-board-approves-new-6-billion-share-repurchase-authorization-declares-quarterly-dividend-302928490.html": "2026-11-03",
-    "https://www.prnewswire.com/news-releases/bio-techne-declares-dividend-302928623.html": "2026-11-03",
     "https://www.globenewswire.com/news-release/2026/11/03/3394906/0/en/peyto-exploration-development-corp-announces-an-8-dividend-increase.html": "2026-11-04",
     "https://www.globenewswire.com/news-release/2026/11/03/3394873/0/en/national-bank-holdings-corporation-announces-increase-to-quarterly-dividend.html": "2026-11-04",
     "https://www.globenewswire.com/news-release/2026/11/03/3394843/0/en/melcor-developments-announces-third-quarter-results-declares-quarterly-dividend-of-0-15-per-share.html": "2026-11-04",
