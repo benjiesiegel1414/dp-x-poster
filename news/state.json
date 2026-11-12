@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-04": {
-      "tier1": 1,
-      "tier2": 1
-    },
     "2026-11-05": {
       "tier1": 1,
       "tier2": 1
@@ -31,47 +27,13 @@
     "2026-11-11": {
       "tier1": 0,
       "tier2": 1
+    },
+    "2026-11-12": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/11/03/3394906/0/en/peyto-exploration-development-corp-announces-an-8-dividend-increase.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394873/0/en/national-bank-holdings-corporation-announces-increase-to-quarterly-dividend.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394843/0/en/melcor-developments-announces-third-quarter-results-declares-quarterly-dividend-of-0-15-per-share.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394815/0/en/powell-industries-declares-quarterly-cash-dividend.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394764/26819/en/weyco-group-inc-declares-special-cash-dividend.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394767/0/en/dynagas-lng-partners-lp-announces-cash-distribution-for-the-quarter-ended-september-30-2026-of-0-05-per-common-unit-and-sanctions-update.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394782/33079/en/the-scotts-miracle-gro-company-announces-quarterly-dividend-payment.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394783/9057/en/pennantpark-investment-corporation-announces-monthly-distribution-of-0-08-per-share.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394784/0/en/pennantpark-floating-rate-capital-ltd-announces-monthly-distribution-of-0-0833-per-share.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394727/0/en/mulvihill-split-capital-share-etf-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394728/0/en/mulvihill-enhanced-split-preferred-share-etf-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394731/0/en/mulvihill-split-preferred-share-etf-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394732/0/en/mulvihill-premium-yield-fund-declares-monthly-distribution-for-its-etf-class.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394733/0/en/mulvihill-corporate-bond-fund-declares-monthly-distribution-for-its-etf-class.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394734/0/en/mulvihill-canadian-bank-enhanced-yield-etf-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394735/0/en/mulvihill-canadian-bank-etf-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394737/0/en/premium-global-income-split-fund-declares-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394741/0/en/premium-income-corporation-announces-monthly-distribution.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394656/35318/en/sprott-inc-announces-25-dividend-increase-and-declares-third-quarter-2026-dividend.html": "2026-11-04",
-    "https://www.globenewswire.com/news-release/2026/11/03/3394242/0/en/greif-inc-declares-quarterly-dividend.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/torm-plc-q3-2026-results-dividend-distribution-and-financial-outlook-2026-302929026.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/enbridge-inc-declares-quarterly-dividends-878504039.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/enbridge-inc-declares-quarterly-dividends-302929169.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/vermilion-energy-inc-announces-0-135-cdn-cash-dividend-for-december-31--2026-payment-date-302928705.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/viatris-announces-quarterly-dividend-302928508.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/peabody-board-declares-dividend-on-common-stock-302928567.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/service-corporation-international-declares-quarterly-cash-dividend-302929566.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/net-lease-office-properties-declares-special-cash-distribution-of-1-50-per-share-302929713.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/koppers-holdings-inc-declares-quarterly-cash-dividend-302929822.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/silvercorp-declares-semi-annual-dividend-of-us0-0125-per-share-302929636.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/manulife-declares-preferred-share-dividend-302929813.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/sunlife-increases-common-share-dividend-and-declares-dividends-on-preferred-shares-payable-in-q4-2026-896790087.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/sunlife-increases-common-share-dividend-and-declares-dividends-on-preferred-shares-payable-in-q4-2026-302929819.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/manulife-declares-common-share-dividend-851345633.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/manulife-declares-common-share-dividend-302929811.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/century-communities-announces-quarterly-cash-dividend-302929882.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/t-rowe-price-group-inc-declares-quarterly-dividend-302929875.html": "2026-11-04",
-    "https://www.prnewswire.com/news-releases/bluerock-private-real-estate-fund-announces-monthly-distribution-for-november-2026-302929971.html": "2026-11-04",
     "https://www.prnewswire.com/news-releases/bd-board-increases-dividend-for-55th-consecutive-year-authorizes-10-million-additional-share-repurchases-302929915.html": "2026-11-05",
     "https://www.prnewswire.com/news-releases/msc-income-fund-announces-first-quarter-2027-regular-monthly-dividends-and-supplemental-dividend-payable-in-march-2027-302929868.html": "2026-11-05",
     "https://www.prnewswire.com/news-releases/dte-energy-board-of-directors-declares-quarterly-dividend-302930622.html": "2026-11-05",
