@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-05": {
-      "tier1": 1,
-      "tier2": 1
-    },
     "2026-11-06": {
       "tier1": 1,
       "tier2": 0
@@ -31,23 +27,13 @@
     "2026-11-12": {
       "tier1": 2,
       "tier2": 0
+    },
+    "2026-11-13": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/bd-board-increases-dividend-for-55th-consecutive-year-authorizes-10-million-additional-share-repurchases-302929915.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/msc-income-fund-announces-first-quarter-2027-regular-monthly-dividends-and-supplemental-dividend-payable-in-march-2027-302929868.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/dte-energy-board-of-directors-declares-quarterly-dividend-302930622.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/cme-group-declares-quarterly-dividend-302930943.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/equifax-board-of-directors-declares-quarterly-dividend-302930999.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/chesapeake-utilities-corporation-announces-quarterly-dividend-302931081.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/outfront-media-announces-quarterly-dividend-302931221.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/lam-research-corporation-announces-25-billion-share-repurchase-authorization-and-declares-quarterly-dividend-302931288.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/smart-sand-inc-declares-special-dividend-of-0-05-per-share-302931244.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/marriott-international-declares-quarterly-cash-dividend-302931243.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/kla-declares-regular-cash-dividend-302931350.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/globe-life-inc-declares-dividend-302931392.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/extra-space-storage-inc-announces-4th-quarter-2026-dividend-302931384.html": "2026-11-05",
-    "https://www.prnewswire.com/news-releases/dividend-declaration---wheaton-precious-metals-announces-quarterly-dividend-302931283.html": "2026-11-05",
     "https://www.prnewswire.com/news-releases/telus-corporation---notice-of-cash-dividend-302931493.html": "2026-11-06",
     "https://www.prnewswire.com/news-releases/telus-corporation-notice-of-cash-dividend-847859672.html": "2026-11-06",
     "https://www.prnewswire.com/news-releases/fidelity-national-financial-announces-4-increase-in-quarterly-cash-dividend-302931540.html": "2026-11-06",
