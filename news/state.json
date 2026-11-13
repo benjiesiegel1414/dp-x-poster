@@ -30,7 +30,7 @@
     },
     "2026-11-13": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -109,7 +109,10 @@
     "https://www.globenewswire.com/news-release/2026/11/11/3401145/0/en/okeanis-eco-tankers-corp-key-information-relating-to-q3-2026-dividend.html": "2026-11-12",
     "https://www.globenewswire.com/news-release/2026/11/11/3401134/0/en/or-royalties-declares-fourth-quarter-2026-dividend.html": "2026-11-12",
     "https://www.prnewswire.com/news-releases/weyerhaeuser-company-declares-dividend-on-common-shares-302938525.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/willamette-valley-vineyards-announces-annual-cash-dividend-for-series-a-redeemable-preferred-stock-302938696.html": "2026-11-12"
+    "https://www.prnewswire.com/news-releases/willamette-valley-vineyards-announces-annual-cash-dividend-for-series-a-redeemable-preferred-stock-302938696.html": "2026-11-12",
+    "https://www.prnewswire.com/news-releases/old-republic-declares-fourth-quarter-regular-dividend-of-31-5-cents-per-share-302938559.html": "2026-11-13",
+    "https://www.prnewswire.com/news-releases/xenia-hotels--resorts-declares-dividend-for-fourth-quarter-2026-302937986.html": "2026-11-13",
+    "https://www.prnewswire.com/news-releases/vertiv-declares-quarterly-dividend-302938565.html": "2026-11-13"
   },
   "tier1_last": {
     "O": "2026-10-30",
