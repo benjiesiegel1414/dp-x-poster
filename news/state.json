@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-06": {
-      "tier1": 1,
-      "tier2": 0
-    },
     "2026-11-07": {
       "tier1": 0,
       "tier2": 0
@@ -31,20 +27,13 @@
     "2026-11-13": {
       "tier1": 0,
       "tier2": 1
+    },
+    "2026-11-14": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/telus-corporation---notice-of-cash-dividend-302931493.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/telus-corporation-notice-of-cash-dividend-847859672.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/fidelity-national-financial-announces-4-increase-in-quarterly-cash-dividend-302931540.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/fg-annuities--life-announces-4-increase-in-quarterly-common-stock-dividend-and-declares-dividend-on-preferred-stock-302931541.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/sabine-royalty-trust-announces-monthly-cash-distribution-for-november-2026-302930618.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/ametek-declares-quarterly-dividend-302931168.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/capital-group-global-equity-study-us-dividend-growth-across-industries-reaches-q3-record-302932061.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/tetragon-financial-group-limited-dividend-information-in-respect-of-q3-2026-302932146.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/new-england-realty-associates-lp-announces-fourth-quarter-distribution-on-class-a-units-and-depositary-receipts-302932214.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/havertys-furniture-fourth-quarter-2026-cash-dividend-302932325.html": "2026-11-06",
-    "https://www.prnewswire.com/news-releases/dover-declares-regular-quarterly-cash-dividend-302932405.html": "2026-11-06",
     "https://www.prnewswire.com/news-releases/strathcona-resources-ltd-reports-third-quarter-2026-financial-and-operating-results-and-announces-quarterly-dividend-302932929.html": "2026-11-09",
     "https://www.prnewswire.com/news-releases/somnigroup-announces-fourth-quarter-cash-dividend-302932409.html": "2026-11-09",
     "https://www.prnewswire.com/news-releases/genuine-parts-company-declares-regular-quarterly-dividend-302933791.html": "2026-11-09",
