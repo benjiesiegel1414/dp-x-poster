@@ -30,7 +30,7 @@
     },
     "2026-11-16": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -130,7 +130,8 @@
     "https://www.prnewswire.com/news-releases/highway-holdings-declares-us0-43228-cash-per-share-special-dividend-302939872.html": "2026-11-16",
     "https://www.prnewswire.com/news-releases/t-rowe-price-oha-select-private-credit-fund-announces-september-30--2026-financial-results-and-declared-total-distributions-of-0-60-per-share-in-q3-2026--302939652.html": "2026-11-16",
     "https://www.prnewswire.com/news-releases/neuberger-municipal-fund-announces-monthly-distribution-302940645.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/bsr-reit-announces-november-2026-cash-distribution-302940130.html": "2026-11-16"
+    "https://www.prnewswire.com/news-releases/bsr-reit-announces-november-2026-cash-distribution-302940130.html": "2026-11-16",
+    "https://www.prnewswire.com/news-releases/mt-bank-corporation-announces-increased-common-stock-dividend-302941131.html": "2026-11-16"
   },
   "tier1_last": {
     "O": "2026-10-30",
