@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-09": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-11-10": {
       "tier1": 1,
       "tier2": 1
@@ -31,16 +27,13 @@
     "2026-11-16": {
       "tier1": 0,
       "tier2": 1
+    },
+    "2026-11-17": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/strathcona-resources-ltd-reports-third-quarter-2026-financial-and-operating-results-and-announces-quarterly-dividend-302932929.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/somnigroup-announces-fourth-quarter-cash-dividend-302932409.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/genuine-parts-company-declares-regular-quarterly-dividend-302933791.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/steel-dynamics-announces-additional-3-0-billion-share-repurchase-authorization-and-fourth-quarter-2026-cash-dividend-302933762.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/energizer-holdings-inc-declares-quarterly-dividend-on-its-common-stock-302933892.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/autoliv-declares-increased-quarterly-dividend-302934001.html": "2026-11-09",
-    "https://www.prnewswire.com/news-releases/autoliv-declares-increased-quarterly-dividend-302933998.html": "2026-11-09",
     "https://www.prnewswire.com/news-releases/the-aaon-group-announces-quarterly-cash-dividend-302934292.html": "2026-11-10",
     "https://www.prnewswire.com/news-releases/virginia-national-bankshares-corporation-announces-stock-and-cash-dividends-302934442.html": "2026-11-10",
     "https://www.prnewswire.com/news-releases/federated-hermes-premier-municipal-income-fund-declares-dividend-302934970.html": "2026-11-10",
