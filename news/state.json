@@ -30,7 +30,7 @@
     },
     "2026-11-17": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -125,7 +125,8 @@
     "https://www.prnewswire.com/news-releases/neuberger-municipal-fund-announces-monthly-distribution-302940645.html": "2026-11-16",
     "https://www.prnewswire.com/news-releases/bsr-reit-announces-november-2026-cash-distribution-302940130.html": "2026-11-16",
     "https://www.prnewswire.com/news-releases/mt-bank-corporation-announces-increased-common-stock-dividend-302941131.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/nutex-health-declares-first-dividend-as-a-public-company-302941502.html": "2026-11-17"
+    "https://www.prnewswire.com/news-releases/nutex-health-declares-first-dividend-as-a-public-company-302941502.html": "2026-11-17",
+    "https://www.prnewswire.com/news-releases/quanta-services-announces-quarterly-cash-dividend-302941563.html": "2026-11-17"
   },
   "tier1_last": {
     "O": "2026-10-30",
