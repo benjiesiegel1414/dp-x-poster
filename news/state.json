@@ -30,7 +30,7 @@
     },
     "2026-11-17": {
       "tier1": 0,
-      "tier2": 1
+      "tier2": 2
     }
   },
   "seen": {
@@ -146,7 +146,8 @@
     "https://www.prnewswire.com/news-releases/nacco-industries-declares-quarterly-dividend-302942575.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/texas-community-bancshares-inc-announces-quarterly-cash-dividend-and-a-special-cash-dividend-302942754.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/pseg-declares-regular-quarterly-dividend-for-the-fourth-quarter-of-2026-302942821.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/wtb-financial-corporation-declares-regular-common-shareholder-dividend-302942074.html": "2026-11-17"
+    "https://www.prnewswire.com/news-releases/wtb-financial-corporation-declares-regular-common-shareholder-dividend-302942074.html": "2026-11-17",
+    "https://www.prnewswire.com/news-releases/mccormick-announces-increase-in-quarterly-dividend-302942921.html": "2026-11-17"
   },
   "tier1_last": {
     "O": "2026-10-30",
