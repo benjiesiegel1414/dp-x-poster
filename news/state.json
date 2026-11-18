@@ -30,7 +30,7 @@
     },
     "2026-11-18": {
       "tier1": 0,
-      "tier2": 0
+      "tier2": 1
     }
   },
   "seen": {
@@ -142,7 +142,8 @@
     "https://www.globenewswire.com/news-release/2026/11/17/3405188/23119/en/chemung-financial-corporation-announces-quarterly-dividend.html": "2026-11-17",
     "https://www.globenewswire.com/news-release/2026/11/17/3405176/11704/en/star-equity-holdings-inc-declares-cash-dividend-of-0-25-per-share-of-10-series-a-cumulative-perpetual-preferred-stock.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/clorox-declares-regular-quarterly-dividend-of-1-25-per-share-302943078.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302941841.html": "2026-11-18"
+    "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302941841.html": "2026-11-18",
+    "https://www.prnewswire.com/news-releases/aes-announces-stub-period-dividend-302943729.html": "2026-11-18"
   },
   "tier1_last": {
     "O": "2026-10-30",
