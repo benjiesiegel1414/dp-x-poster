@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-11": {
-      "tier1": 0,
-      "tier2": 1
-    },
     "2026-11-12": {
       "tier1": 2,
       "tier2": 0
@@ -31,20 +27,13 @@
     "2026-11-18": {
       "tier1": 3,
       "tier2": 1
+    },
+    "2026-11-19": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/cgi-reports-fourth-quarter-and-fiscal-2026-results-302935758.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/adp-increases-cash-dividend-marks-52nd-consecutive-year-of-dividend-increases-302935722.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/oneamerica-financial-announces-record-life-insurance-dividend-payments-302936646.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/huntsman-announces-fourth-quarter-2026-common-dividend-302935643.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/amh-announces-distributions-302936933.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/olin-marks-100-years-of-consecutive-quarterly-dividends-302936940.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/cardinal-health-board-of-directors-approves-quarterly-dividend-302936942.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/kimberly-clark-declares-quarterly-dividend-302937007.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/allison-declares-quarterly-dividend-302936729.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/sempra-declares-common-dividend-302937057.html": "2026-11-11",
-    "https://www.prnewswire.com/news-releases/allspring-closed-end-funds-declare-monthly-and-quarterly-distributions-302936013.html": "2026-11-11",
     "https://www.prnewswire.com/news-releases/aflac-incorporated-announces-4-9-increase-in-the-first-quarter-2027-dividend-302937426.html": "2026-11-12",
     "https://www.prnewswire.com/news-releases/borgwarner-declares-quarterly-dividend-302936532.html": "2026-11-12",
     "https://www.prnewswire.com/news-releases/southwest-airlines-declares-191st-quarterly-dividend-302938068.html": "2026-11-12",
