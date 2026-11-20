@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-12": {
-      "tier1": 2,
-      "tier2": 0
-    },
     "2026-11-13": {
       "tier1": 0,
       "tier2": 1
@@ -31,41 +27,13 @@
     "2026-11-19": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-20": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/aflac-incorporated-announces-4-9-increase-in-the-first-quarter-2027-dividend-302937426.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/borgwarner-declares-quarterly-dividend-302936532.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/southwest-airlines-declares-191st-quarterly-dividend-302938068.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/allstate-announces-quarterly-dividend-payable-jan-4-2027-302938232.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/farmer-mac-declares-quarterly-dividends-on-common-and-preferred-stock-302938154.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/keycorp-declares-quarterly-cash-dividend-on-common-shares-and-preferred-stocks-302938316.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/agnc-investment-corp-declares-monthly-common-stock-dividend-of-0-12-per-common-share-for-november-2026--302938156.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/spire-increases-common-stock-dividend-302938374.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/wyndham-hotels--resorts-declares-quarterly-cash-dividend-302938352.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/mdu-resources-announces-quarterly-dividend-on-common-stock-302938239.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402305/0/en/dpm-metals-declares-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402269/0/en/capstone-infrastructure-corporation-reports-third-quarter-results-and-declares-a-quarterly-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402275/0/en/martinrea-international-inc-reports-third-quarter-results-and-declares-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402249/34434/en/united-community-banks-inc-announces-quarterly-cash-dividend-on-common-stock.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402240/0/en/martin-marietta-declares-quarterly-cash-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402231/0/en/adams-natural-resources-fund-declares-distribution.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402234/0/en/adams-diversified-equity-fund-declares-distribution.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402166/0/en/digital-realty-declares-quarterly-cash-dividends-for-common-and-preferred-stock.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402096/32278/en/first-national-corporation-announces-11-8-increase-in-quarterly-cash-dividends.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3402072/33518/en/pinnacle-bankshares-corporation-announces-increased-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3401748/0/en/wetouch-technology-inc-provides-further-update-on-special-cash-dividend-distribution.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3401674/5764/en/old-national-bancorp-announces-quarterly-dividends.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3401418/0/en/chicago-atlantic-bdc-inc-declares-0-34-cash-dividend-for-fourth-quarter-2026.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/12/3401335/0/en/chagee-announces-declaration-of-special-cash-dividend-and-three-year-annual-dividend-policy.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401186/0/en/hni-corporation-announces-quarterly-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401175/0/en/avista-corp-board-declares-common-stock-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401152/0/en/ashland-board-authorizes-quarterly-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401154/30821/en/navient-declares-fourth-quarter-common-stock-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401145/0/en/okeanis-eco-tankers-corp-key-information-relating-to-q3-2026-dividend.html": "2026-11-12",
-    "https://www.globenewswire.com/news-release/2026/11/11/3401134/0/en/or-royalties-declares-fourth-quarter-2026-dividend.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/weyerhaeuser-company-declares-dividend-on-common-shares-302938525.html": "2026-11-12",
-    "https://www.prnewswire.com/news-releases/willamette-valley-vineyards-announces-annual-cash-dividend-for-series-a-redeemable-preferred-stock-302938696.html": "2026-11-12",
     "https://www.prnewswire.com/news-releases/old-republic-declares-fourth-quarter-regular-dividend-of-31-5-cents-per-share-302938559.html": "2026-11-13",
     "https://www.prnewswire.com/news-releases/xenia-hotels--resorts-declares-dividend-for-fourth-quarter-2026-302937986.html": "2026-11-13",
     "https://www.prnewswire.com/news-releases/vertiv-declares-quarterly-dividend-302938565.html": "2026-11-13",
