@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-13": {
-      "tier1": 0,
-      "tier2": 1
-    },
     "2026-11-14": {
       "tier1": 0,
       "tier2": 0
@@ -31,24 +27,13 @@
     "2026-11-20": {
       "tier1": 1,
       "tier2": 0
+    },
+    "2026-11-21": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/old-republic-declares-fourth-quarter-regular-dividend-of-31-5-cents-per-share-302938559.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/xenia-hotels--resorts-declares-dividend-for-fourth-quarter-2026-302937986.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/vertiv-declares-quarterly-dividend-302938565.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/columbia-banking-system-announces-increase-to-common-share-dividend-302938550.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/patrick-industries-inc-announces-increase-to-regular-quarterly-cash-dividend-and-replenished-share-repurchase-authorization-302938935.html": "2026-11-13",
-    "https://www.globenewswire.com/news-release/2026/11/13/3402585/0/en/sienna-announces-november-dividend.html": "2026-11-13",
-    "https://www.globenewswire.com/news-release/2026/11/13/3402492/0/en/nexliving-communities-reports-q3-2026-results-and-declares-quarterly-dividend.html": "2026-11-13",
-    "https://www.globenewswire.com/news-release/2026/11/13/3402456/0/en/nov-declares-regular-quarterly-dividend.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/timken-declares-quarterly-dividend-of-36-cents-per-share-302939005.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/cincinnati-financial-corporation-declares-regular-quarterly-cash-dividend-302939187.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/consumers-energy-the-principal-subsidiary-of-cms-energy-declares-quarterly-dividend-on-preferred-stock-302939177.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/cms-energy-declares-quarterly-dividend-on-cumulative-redeemable-perpetual-preferred-stock-302939263.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/lowes-companies-inc-declares-cash-dividend-302939328.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/cno-financial-group-declares-0-18-quarterly-dividend-302939285.html": "2026-11-13",
-    "https://www.prnewswire.com/news-releases/invesco-mortgage-capital-inc-november-2026-dividend-announcement-and-october-financial-update-302939281.html": "2026-11-13",
     "https://www.globenewswire.com/news-release/2026/11/13/3403004/0/en/news-release-correction-dpm-metals-declares-dividend.html": "2026-11-14",
     "https://www.globenewswire.com/news-release/2026/11/13/3402986/0/en/arrowmark-financial-corp-announces-monthly-cash-distribution-of-0-15-per-share-for-november-2026.html": "2026-11-14",
     "https://www.globenewswire.com/news-release/2026/11/13/3402980/0/en/westlake-corporation-declares-quarterly-dividend.html": "2026-11-14",
