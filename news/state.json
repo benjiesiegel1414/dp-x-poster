@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-16": {
-      "tier1": 0,
-      "tier2": 1
-    },
     "2026-11-17": {
       "tier1": 0,
       "tier2": 2
@@ -31,15 +27,13 @@
     "2026-11-23": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-24": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/11/16/3403322/0/en/yieldmax-etfs-announces-distributions-on-msst-nvit-and-test.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/highway-holdings-declares-us0-43228-cash-per-share-special-dividend-302939872.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/t-rowe-price-oha-select-private-credit-fund-announces-september-30--2026-financial-results-and-declared-total-distributions-of-0-60-per-share-in-q3-2026--302939652.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/neuberger-municipal-fund-announces-monthly-distribution-302940645.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/bsr-reit-announces-november-2026-cash-distribution-302940130.html": "2026-11-16",
-    "https://www.prnewswire.com/news-releases/mt-bank-corporation-announces-increased-common-stock-dividend-302941131.html": "2026-11-16",
     "https://www.prnewswire.com/news-releases/nutex-health-declares-first-dividend-as-a-public-company-302941502.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/quanta-services-announces-quarterly-cash-dividend-302941563.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/visteon-declares-quarterly-dividend-of-0-375-per-share-302940432.html": "2026-11-17",
