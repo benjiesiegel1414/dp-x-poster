@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-17": {
-      "tier1": 0,
-      "tier2": 2
-    },
     "2026-11-18": {
       "tier1": 3,
       "tier2": 1
@@ -31,41 +27,13 @@
     "2026-11-24": {
       "tier1": 1,
       "tier2": 0
+    },
+    "2026-11-25": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/nutex-health-declares-first-dividend-as-a-public-company-302941502.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/quanta-services-announces-quarterly-cash-dividend-302941563.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/visteon-declares-quarterly-dividend-of-0-375-per-share-302940432.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3404765/0/en/smartcentres-declares-distribution-for-november-2026.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3404578/0/en/euroseas-ltd-reports-results-for-the-quarter-and-nine-month-period-ended-september-30-2026-and-declares-quarterly-common-stock-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3404486/22558/en/streamex-corp-announces-october-2026-yield-dividend-distribution-for-gldy.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3404420/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3404198/0/en/picton-mahoney-asset-management-announces-monthly-distribution-for-picton-long-short-income-alternative-fund-exchange-traded-fund-units-picton-credit-opportunities-alternative-fund.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3404131/0/en/cabot-corporation-board-declares-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3404094/0/en/alpine-income-property-trust-declares-dividends-for-the-fourth-quarter-2026.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3404098/0/en/cto-realty-growth-declares-dividends-for-the-fourth-quarter-2026.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3404032/0/en/security-federal-announces-cash-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403725/0/en/allied-announces-november-2026-distribution.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403586/0/en/farmers-merchants-bancorp-fmcb-announces-increase-in-quarterly-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403461/0/en/fg-communities-holdings-inc-declares-cash-dividend-on-its-8-00-cumulative-preferred-stock-series-a.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403388/0/en/agf-investments-announces-2026-estimated-annual-reinvested-capital-gains-distributions-for-etfs.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403388/0/fr/placements-agf-annonce-les-distributions-annuelles-estim%C3%A9es-de-2026-r%C3%A9investies-et-provenant-de-gains-en-capital-pour-les-fnb.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/16/3403363/0/en/flagship-communities-real-estate-investment-trust-announces-november-2026-cash-distribution.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/nacco-industries-declares-quarterly-dividend-302942575.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/texas-community-bancshares-inc-announces-quarterly-cash-dividend-and-a-special-cash-dividend-302942754.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/pseg-declares-regular-quarterly-dividend-for-the-fourth-quarter-of-2026-302942821.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/wtb-financial-corporation-declares-regular-common-shareholder-dividend-302942074.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/mccormick-announces-increase-in-quarterly-dividend-302942921.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405292/0/en/biosyent-declares-fourth-quarter-2026-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405264/0/en/purpose-investments-inc-announces-november-2026-distributions.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405264/0/fr/investissements-purpose-annonce-les-distributions-de-novembre-2026.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405219/7948/en/first-capital-inc-announces-quarterly-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405216/0/en/hub-group-declares-quarterly-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405193/0/en/vishay-intertechnology-declares-quarterly-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405188/23119/en/chemung-financial-corporation-announces-quarterly-dividend.html": "2026-11-17",
-    "https://www.globenewswire.com/news-release/2026/11/17/3405176/11704/en/star-equity-holdings-inc-declares-cash-dividend-of-0-25-per-share-of-10-series-a-cumulative-perpetual-preferred-stock.html": "2026-11-17",
-    "https://www.prnewswire.com/news-releases/clorox-declares-regular-quarterly-dividend-of-1-25-per-share-302943078.html": "2026-11-17",
     "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302941841.html": "2026-11-18",
     "https://www.prnewswire.com/news-releases/aes-announces-stub-period-dividend-302943729.html": "2026-11-18",
     "https://www.prnewswire.com/news-releases/pepsico-declares-quarterly-dividend-302944380.html": "2026-11-18",
