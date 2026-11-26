@@ -29,7 +29,7 @@
       "tier2": 0
     },
     "2026-11-25": {
-      "tier1": 0,
+      "tier1": 1,
       "tier2": 0
     }
   },
@@ -161,7 +161,10 @@
     "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-kundigt-eine-bardividende-in-hohe-von-0-01-us-dollar-pro-stammaktie-an-302950889.html": "2026-11-25",
     "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-kondigt-een-contant-dividend-van-0-01-dollar-per-gewoon-aandeel-aan-302950887.html": "2026-11-25",
     "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-annuncia-un-dividendo-in-contanti-di-0-01-dollari-per-azione-ordinaria-302950884.html": "2026-11-25",
-    "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-annonce-un-dividende-en-especes-de-0-01--par-action-ordinaire-302950883.html": "2026-11-25"
+    "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-annonce-un-dividende-en-especes-de-0-01--par-action-ordinaire-302950883.html": "2026-11-25",
+    "https://www.globenewswire.com/news-release/2026/11/25/3410589/0/en/japan-smaller-capitalization-fund-inc-announces-monthly-distributions-for-january-february-and-march-2027-under-its-level-distribution-plan.html": "2026-11-25",
+    "https://www.globenewswire.com/news-release/2026/11/25/3410584/12288/en/armour-residential-reit-inc-announces-december-2026-dividend-rate-per-common-share.html": "2026-11-25",
+    "https://www.globenewswire.com/news-release/2026/11/25/3410582/0/en/commercial-national-financial-corporation-announces-quarterly-dividend-share-repurchase-program.html": "2026-11-25"
   },
   "tier1_last": {
     "O": "2026-10-30",
@@ -185,7 +188,7 @@
     "DIVO": "2026-10-29",
     "GPIQ": "2026-11-02",
     "MSTY": "2026-11-19",
-    "ULTY": "2026-11-18"
+    "ULTY": "2026-11-25"
   },
   "initialized": true
 }
