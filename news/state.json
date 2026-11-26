@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-18": {
-      "tier1": 3,
-      "tier2": 1
-    },
     "2026-11-19": {
       "tier1": 0,
       "tier2": 0
@@ -31,22 +27,13 @@
     "2026-11-25": {
       "tier1": 1,
       "tier2": 0
+    },
+    "2026-11-26": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.prnewswire.com/news-releases/hyperscale-data-declares-monthly-cash-dividend-of-0-2708333-per-share-of-13-00-series-d-cumulative-redeemable-perpetual-preferred-stock-302941841.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/aes-announces-stub-period-dividend-302943729.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/pepsico-declares-quarterly-dividend-302944380.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/first-us-bancshares-inc-declares-cash-dividend-302944412.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/wesbanco-declares-preferred-stock-dividend-and-increase-in-quarterly-cash-common-dividend-302944436.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/graphic-packaging-holding-company-declares-quarterly-dividend-302944415.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/katahdin-bankshares-corp-announces-significant-increase-to-quarterly-dividend-302944385.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/merchants-bancorp-declares-quarterly-common-and-preferred-dividends-302944352.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/simmons-first-national-corporation-declares-0-215-per-share-dividend-302943994.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/quaker-houghton-announces-quarterly-dividend-302944251.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/lake-ridge-bancorp-inc-declares-fourth-quarter-2026-dividend-of-0-68-per-share-302944514.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/bankfirst-capital-corporation-announces-cash-dividend-302944476.html": "2026-11-18",
-    "https://www.prnewswire.com/news-releases/richmond-mutual-bancorporation-inc-announces-quarterly-dividend-302944549.html": "2026-11-18",
     "https://www.globenewswire.com/news-release/2026/11/18/3406217/189/en/northrop-grumman-board-declares-quarterly-dividend.html": "2026-11-19",
     "https://www.globenewswire.com/news-release/2026/11/18/3406178/0/en/universal-health-services-inc-announces-dividend.html": "2026-11-19",
     "https://www.globenewswire.com/news-release/2026/11/18/3406158/0/en/carlyle-credit-income-fund-announces-fourth-quarter-and-full-year-2026-financial-results-and-declares-monthly-common-and-preferred-dividends.html": "2026-11-19",
