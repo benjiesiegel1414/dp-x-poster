@@ -1,9 +1,5 @@
 {
   "counts": {
-    "2026-11-19": {
-      "tier1": 0,
-      "tier2": 0
-    },
     "2026-11-20": {
       "tier1": 1,
       "tier2": 0
@@ -31,57 +27,13 @@
     "2026-11-26": {
       "tier1": 0,
       "tier2": 0
+    },
+    "2026-11-27": {
+      "tier1": 0,
+      "tier2": 0
     }
   },
   "seen": {
-    "https://www.globenewswire.com/news-release/2026/11/18/3406217/189/en/northrop-grumman-board-declares-quarterly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406178/0/en/universal-health-services-inc-announces-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406158/0/en/carlyle-credit-income-fund-announces-fourth-quarter-and-full-year-2026-financial-results-and-declares-monthly-common-and-preferred-dividends.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406148/16143/en/trustco-declares-quarterly-dividend-on-the-heels-of-strong-quarterly-results.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406103/0/en/vanguard-investments-canada-announces-estimated-2026-annual-capital-gains-distributions-for-the-vanguard-etfs.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406103/0/fr/placements-vanguard-canada-annonce-les-distributions-annuelles-estimatives-de-gains-en-capital-des-fnb-vanguard-mc-pour-2026.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406094/0/en/vanguard-investments-canada-announces-estimated-2026-year-end-distributions-for-vanguard-mutual-funds.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3406094/0/fr/placements-vanguard-canada-annonce-les-distributions-de-fin-d-ann%C3%A9e-estimatives-pour-les-fonds-communs-de-placement-de-vanguard-mc-pour-2026.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405672/0/en/dividend-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405677/0/en/north-american-financial-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405679/0/en/income-financial-declares-monthly-distribution.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405681/0/en/m-split-corp-monthly-dividend-declared-for-class-i-and-class-ii-preferred-shares.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405685/0/en/us-financial-15-split-corp-preferred-dividend-declared.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405687/0/en/dividend-15-split-corp-ii-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405691/0/en/tdb-split-corp-regular-monthly-dividend-declaration-for-class-a-priority-equity-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405693/0/en/canadian-life-companies-split-corp-declares-class-a-preferred-share-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405694/0/en/dividend-select-15-corp-declares-monthly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405695/0/en/canadian-banc-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405698/0/en/financial-15-split-corp-monthly-dividend-declaration-for-class-a-preferred-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/18/3405701/0/en/monthly-distribution-declared-for-quadravest-preferred-split-share-etf.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/permrock-royalty-trust-declares-monthly-cash-distribution-302944630.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/marine-petroleum-trust-announces-fourth-quarter-cash-distribution-302938536.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/cross-timbers-royalty-trust-declares-november-cash-distribution-302943394.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/cw-bancorp-quarterly-cash-dividend-302944518.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/san-juan-basin-royalty-trust-declares-no-cash-distribution-for-november-2026-302944890.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3406506/0/en/nxp-semiconductors-announces-quarterly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3406420/0/en/alamos-gold-declares-quarterly-dividend.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/oakworth-capital-inc-announces-12th-consecutive-annual-cash-dividend-302945765.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/chubb-limited-board-declares-quarterly-dividend-302945718.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407072/0/en/methanex-corporation-notice-of-cash-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3406999/0/en/mullen-group-ltd-announces-declaration-of-monthly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3406927/0/en/stolt-nielsen-limited-board-declares-interim-dividend-of-1-00-per-common-share.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/lear-declares-quarterly-cash-dividend-302945725.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/the-home-depot-declares-quarterly-dividend-of-2-33--302946007.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/natural-grocers-by-vitamin-cottage-inc-declares-quarterly-dividend-302946005.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/hirequest-inc-declares-quarterly-dividend-302946036.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/invesco-provides-estimated-capital-gain-distribution-information-for-2026-302946133.html": "2026-11-19",
-    "https://www.prnewswire.com/news-releases/hamilton-beach-brands-holding-company-announces-quarterly-dividend-302946195.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407151/0/en/dillard-s-inc-announces-special-dividend-of-35-00-per-share-and-quarterly-cash-dividend-of-0-30-per-share.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407144/0/en/red-river-bancshares-inc-announces-quarterly-cash-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407139/10640/en/wabash-announces-quarterly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407130/9284/en/capital-city-bank-group-inc-increases-cash-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407133/9870/en/financial-institutions-inc-announces-quarterly-cash-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407126/0/en/kadant-declares-cash-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407107/13748/en/marten-transport-declares-quarterly-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407101/0/en/kamada-updates-on-withholding-tax-procedures-on-previously-announced-cash-dividend-to-shareholders.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407095/34252/en/unity-bancorp-announces-fourth-quarter-dividend.html": "2026-11-19",
-    "https://www.globenewswire.com/news-release/2026/11/19/3407083/6889/en/meritage-homes-announces-quarterly-cash-dividend.html": "2026-11-19",
     "https://www.prnewswire.com/news-releases/the-home-depot-anuncia-un-dividendo-trimestral-de-2-33-839158673.html": "2026-11-20",
     "https://www.prnewswire.com/news-releases/world-gym-corporation-reports-q3-2026-financial-results-302946841.html": "2026-11-20",
     "https://www.prnewswire.com/news-releases/ppl-to-pay-quarterly-stock-dividend-jan-4-2027-302946945.html": "2026-11-20",
